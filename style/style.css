@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.contFatherPresent {
+    width: 100%;
+    height: 100vh;
+}
+.contFatherPresent .lentDark {
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.798);
+    
+}
+.contFatherPresent .contBackIm {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url('/images/Torre-Mirador-Parque-del-Cafe.jpg');
+}
+.lentDark .contBton{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+/* boton */
+.contBton a {
+    position: relative;
+    padding: 20px 40px;
+    background: #058d9e;
+    color: white;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    text-decoration: none;
+    letter-spacing: 4px;
+    transform-style: preserve-3d;
+    transition: ease-in-out 1s;
+    border-radius: 60px;
+}
+.contBton a:hover {
+    transform: rotateX(360deg);
+}
+.contBton a span {
+    display: block;
+    font-weight: bold;
+    transform-style: preserve-3d;
+    transform: perspective(100px) translateZ(20px);
+}
+.contBton a:before {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 6px;
+    right: 6px;
+    bottom: 4px;
+    border: solid 2px white;
+    transform-style: preserve-3d;
+    transform: perspective(500px) translateZ(15px);
+    border-radius: 60px;
+}
+
+.contBton a::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    border: solid 2px white;
+    transform-style: preserve-3d;
+    transform: perspective(500px) translateZ(-15px);
+    border-radius: 60px;
+}
+
