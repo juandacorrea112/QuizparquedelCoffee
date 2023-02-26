@@ -17,7 +17,7 @@ html {
     align-items: center;
     width: 100%;
     height: 100vh;
-    border-color: #303030;
+    background-color: #303030;
 }
 
 .card {
@@ -70,4 +70,99 @@ html {
     text-transform: uppercase;
     outline: none;
     cursor: pointer;
+    transition: all 0.5s;
+    box-shadow: 0 0.3rem 0.8rem #2525254d;
+    background-image: linear-gradient(#17cccd, #43b141);
+}
+.change .card-btn{
+    width: 6rem;
+    right: 3rem;
+    bottom: -3rem;
+    border-radius: 50%;
+}
+
+.card-btn-contact {
+    transition: all 0.5s 0.1s ;
+}
+.card-btn-contact, .card-btn i {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.change .card-btn-contact {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.1s;
+}
+
+.card-btn i {
+    opacity: 1;
+    visibility: hidden;
+    transition: all 0.5s;
+}
+
+.card-contact {
+    color: #fff;
+    padding: 1.5rem 2rem;
+    transition: all 0.5s;
+    background-color: #207540;
+    transform: translateY(-100%);
+}
+
+.change .card-contact {
+    transform: translateY(0);
+}
+
+.card-contact h4 {
+    font-size: 18px;
+    text-transform: uppercase;
+    transform: scale(0);
+    transform-origin: left;
+    transition: all 0.5s;
+    text-shadow: 0 0.1rem 0.2rem #0000004d;
+}
+
+.change .card-contact h4 {
+    transform: scale(1);
+}
+
+.social-info {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 15px;
+    margin: 15px 0;
+    opacity: 0;
+    border-radius: 20px;
+    visibility: hidden;
+    transform: translateY(50%);
+    background-color: #fff;
+}
+
+.email {
+    transition: all 0.5s 0.3s;
+}
+.fb {
+    transition: all 0.5s 0.5s;
+}
+.linkedin {
+    transition: all 0.5s 0.3s;
+}
+.change .social-info {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 25px;
 }
