@@ -166,3 +166,49 @@ html {
     border-radius: 50%;
     margin-right: 25px;
 }
+
+.email .icon-wrapper {
+    background-color: #dd4b39;
+}
+
+.fb .icon-wrapper {
+    background-color: #3b5998;
+}
+
+.linkedin .icon-wrapper {
+    background-color: #007bb6;
+}
+
+.icon-wrapper {
+    font-size: 2rem;
+    color: white;
+}
+
+.social-details h4 {
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+
+.email h4 {
+    color: #dd4b39;
+}
+
+.fb h4 {
+    color: #3b5998;
+}
+
+.linkedin h4 {
+    color: #007bb6;
+}
+
+.social-details p {
+    font-size: 15px;
+    color: #747474;
+}
+
+.social-info span {
+    margin-left: auto;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #999;
+}
