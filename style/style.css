@@ -85,4 +85,7 @@
     transform: perspective(500px) translateZ(-15px);
     border-radius: 60px;
 }
-
+/* 
+.contBtonGirar a:hover {
+    transform: rotateX(360deg);
+} */

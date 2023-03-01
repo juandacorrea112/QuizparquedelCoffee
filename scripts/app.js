@@ -1,12 +1,10 @@
 //IR AL QUIZ
-// const btnstarQ = document.getElementById('ComenzarQ')
-
-// btnstarQ.addEventListener('click', Goquiz)
-
-// function Goquiz() {
-//     window.location.assign("/pages/quiz.html")
-// }
-
+// document.getElementById("ComenzarQ").addEventListener("click", () => {
+//     document.getElementById("contBton").classList.toggle("contBtonGirar")
+//     setTimeout(() => {
+//         window.location.assign("/pages/quiz.html")
+//     },3000)
+// })
 //FUNCIONALIDAD DE MOSTRAR LAS PREGUNTAS
 document.getElementById("cardBtn").addEventListener("click", () => {
     document.getElementById("container").classList.toggle("change")
