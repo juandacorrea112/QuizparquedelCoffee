@@ -112,8 +112,8 @@ document.getElementById("opcionA2").addEventListener('click', () => {
     }, 900);
 
     setTimeout(() => {
-        document.getElementById("card-box").classList.add("card-boxClose")
-        document.getElementById('card-contact').classList.add("card-contactClose")
+        document.getElementById("card-box2").classList.add("card-boxClose")
+        document.getElementById('card-contact2').classList.add("card-contactClose")
     }, 2000);
 
     setTimeout(() => {
@@ -135,8 +135,8 @@ document.getElementById("opcionB2").addEventListener('click', () => {
     }, 900);
 
     setTimeout(() => {
-        document.getElementById("card-box").classList.add("card-boxClose")
-        document.getElementById('card-contact').classList.add("card-contactClose")
+        document.getElementById("card-box2").classList.add("card-boxClose")
+        document.getElementById('card-contact2').classList.add("card-contactClose")
     }, 2000);
 
     setTimeout(() => {
@@ -159,12 +159,12 @@ document.getElementById("opcionC2").addEventListener('click', () => {
     }, 900);
 
     setTimeout(() => {
-        document.getElementById("card-box").classList.add("card-boxClose")
-        document.getElementById('card-contact').classList.add("card-contactClose")
+        document.getElementById("card-box2").classList.add("card-boxClose")
+        document.getElementById('card-contact2').classList.add("card-contactClose")
     }, 2000);
 
     setTimeout(() => {
-        document.getElementById("card").style.display = "none"
+        document.getElementById("card2").style.display = "none"
     }, 3500);
 
     setTimeout(() => {
