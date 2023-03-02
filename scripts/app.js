@@ -19,5 +19,14 @@ document.getElementById("opcionA").addEventListener('click', () => {
     setTimeout(() => {        
         document.getElementById("container").classList.toggle("change")
     }, 900);
+
+    setTimeout(() => {
+        document.getElementById("card-box").classList.add("card-boxClose")
+        document.getElementById('card-contact').classList.add("card-contactClose")
+    }, 2000);
+
+    setTimeout(() => {
+        document.getElementById("card").style.display = "none"
+    }, 3500);
    
 })

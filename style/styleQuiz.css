@@ -31,6 +31,14 @@ html {
     border-radius: 15px 15px 0 0;
     background-image: linear-gradient(#9ec14c, #41b14f);
 }
+.card-boxClose {
+    transition: 0.5s;
+    top: 0;
+    opacity: 0;
+    /* visibility: hidden; */
+}
+
+
 .image {
     width: 80px;
     height: 80px;
@@ -110,6 +118,11 @@ html {
     transition: all 0.5s;
     background-color: #207540;
     transform: translateY(-100%);
+}
+.card-contactClose {
+    visibility: hidden;
+    transition: 0.1s;
+    display: none;
 }
 
 .change .card-contact {
