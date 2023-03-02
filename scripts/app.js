@@ -102,3 +102,73 @@ function pregunta2() {
 document.getElementById("cardBtn2").addEventListener("click", () => {
     document.getElementById("container").classList.toggle("change")
 })
+
+
+// RESPUESTA INCORRECTA (A)
+document.getElementById("opcionA2").addEventListener('click', () => {
+    document.getElementById("opcionA2").style.background = "red"
+    setTimeout(() => {        
+        document.getElementById("container").classList.toggle("change")
+    }, 900);
+
+    setTimeout(() => {
+        document.getElementById("card-box").classList.add("card-boxClose")
+        document.getElementById('card-contact').classList.add("card-contactClose")
+    }, 2000);
+
+    setTimeout(() => {
+        document.getElementById("card").style.display = "none"
+    }, 3500);
+
+    setTimeout(() => {
+        pregunta2()
+    }, 4500);
+   
+})
+
+// RESPUESAT INCORRECTA (B)
+
+document.getElementById("opcionB2").addEventListener('click', () => {
+    document.getElementById("opcionB2").style.background = "red"
+    setTimeout(() => {        
+        document.getElementById("container").classList.toggle("change")
+    }, 900);
+
+    setTimeout(() => {
+        document.getElementById("card-box").classList.add("card-boxClose")
+        document.getElementById('card-contact').classList.add("card-contactClose")
+    }, 2000);
+
+    setTimeout(() => {
+        document.getElementById("card").style.display = "none"
+    }, 3500);
+
+    setTimeout(() => {
+        pregunta2()
+    }, 4500);
+   
+})
+
+
+// RESPUESAT CORRECTA (C)
+
+document.getElementById("opcionC2").addEventListener('click', () => {
+    document.getElementById("opcionC2").style.background = "rgb(0, 255, 0)"
+    setTimeout(() => {        
+        document.getElementById("container").classList.toggle("change")
+    }, 900);
+
+    setTimeout(() => {
+        document.getElementById("card-box").classList.add("card-boxClose")
+        document.getElementById('card-contact').classList.add("card-contactClose")
+    }, 2000);
+
+    setTimeout(() => {
+        document.getElementById("card").style.display = "none"
+    }, 3500);
+
+    setTimeout(() => {
+        pregunta2()
+    }, 4500);
+   
+})
