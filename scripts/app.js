@@ -6,8 +6,11 @@
 //     },3000)
 // })
 
+
+// Esconder las demas preguntas
 window.addEventListener('load', () => {
     document.getElementById("card2").classList.toggle("card2Invisible")
+    document.getElementById("card3").classList.toggle("card2Invisible")
 })
 
 
@@ -168,7 +171,19 @@ document.getElementById("opcionC2").addEventListener('click', () => {
     }, 3500);
 
     setTimeout(() => {
-        pregunta2()
+        pregunta3()
     }, 4500);
    
+})
+
+
+function pregunta3() {
+    // alert('oh yeah')
+    document.getElementById("card3").classList.toggle("card2Invisible")
+}
+
+//FUNCIONALIDAD DE MOSTRAR OPCIONES
+
+document.getElementById("cardBtn3").addEventListener("click", () => {
+    document.getElementById("container").classList.toggle("change")
 })
