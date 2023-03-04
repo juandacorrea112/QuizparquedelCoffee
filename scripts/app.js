@@ -17,6 +17,7 @@ window.addEventListener('load', () => {
     document.getElementById("card7").classList.toggle("card2Invisible")
     document.getElementById("card8").classList.toggle("card2Invisible")
     document.getElementById("card9").classList.toggle("card2Invisible")
+    document.getElementById("card10").classList.toggle("card2Invisible")
 })
 
 // VARIABLE PARA ALMACENAR PUNTOS DE LAS RESPUESTAS CORRECTAS
@@ -741,7 +742,7 @@ document.getElementById("opcionA9").addEventListener('click', () => {
     }, 3500);
 
     setTimeout(() => {
-        pregunta7()
+        pregunta10()
     }, 4500);
    
 })
@@ -764,7 +765,7 @@ document.getElementById("opcionB9").addEventListener('click', () => {
     }, 3500);
 
     setTimeout(() => {
-        pregunta7()
+        pregunta10()
     }, 4500);
    
 })
@@ -786,6 +787,92 @@ document.getElementById("opcionC9").addEventListener('click', () => {
 
     setTimeout(() => {
         document.getElementById("card9").style.display = "none"
+    }, 3500);
+
+    setTimeout(() => {
+        pregunta10()
+    }, 4500);
+   
+})
+
+
+// PREGUNTA 10
+
+function pregunta10() {
+    // alert('oh yeah')
+    document.getElementById("card10").classList.toggle("card2Invisible")
+}
+
+
+//FUNCIONALIDAD DE MOSTRAR OPCIONES
+
+document.getElementById("cardBtn10").addEventListener("click", () => {
+    document.getElementById("container").classList.toggle("change")
+})
+
+
+// RESPUESTA INCORRECTA (A)
+document.getElementById("opcionA10").addEventListener('click', () => {
+    document.getElementById("opcionA10").style.background = "red"
+    setTimeout(() => {        
+        document.getElementById("container").classList.toggle("change")
+    }, 900);
+
+    setTimeout(() => {
+        document.getElementById("card-box10").classList.add("card-boxClose")
+        document.getElementById('card-contact10').classList.add("card-contactClose")
+    }, 2000);
+
+    setTimeout(() => {
+        document.getElementById("card10").style.display = "none"
+    }, 3500);
+
+    setTimeout(() => {
+        pregunta7()
+    }, 4500);
+   
+})
+
+// RESPUESAT CORRECTA (B)
+
+document.getElementById("opcionB10").addEventListener('click', () => {
+    document.getElementById("opcionB10").style.background = "red"
+    setTimeout(() => {        
+        document.getElementById("container").classList.toggle("change")
+    }, 900);
+
+    setTimeout(() => {
+        document.getElementById("card-box10").classList.add("card-boxClose")
+        document.getElementById('card-contact10').classList.add("card-contactClose")
+    }, 2000);
+
+    setTimeout(() => {
+        document.getElementById("card10").style.display = "none"
+    }, 3500);
+
+    setTimeout(() => {
+        pregunta7()
+    }, 4500);
+   
+})
+
+
+// RESPUESAT CORRECTA (C)
+
+document.getElementById("opcionC10").addEventListener('click', () => {
+    puntos++
+    document.getElementById("opcionC10").style.background = "rgb(0, 255, 0)"
+    setTimeout(() => {        
+        document.getElementById("container").classList.toggle("change")
+    }, 900);
+
+    setTimeout(() => {
+        document.getElementById("card-box10").classList.add("card-boxClose")
+        document.getElementById('card-contact10').classList.add("card-contactClose")
+    }, 2000);
+
+    setTimeout(() => {
+        document.getElementById("card10").style.display = "none"
     }, 3500);
 
     setTimeout(() => {
