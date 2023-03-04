@@ -15,6 +15,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     width: 98.1%;
     height: 96vh;
     background-color: #303030;
@@ -235,4 +236,21 @@ html {
     transition: 0.5s;
     display: none;
     visibility: hidden;
+}
+
+/* =============== Estilos Puntos ================= */
+.puntos {
+    width: 100%;
+    height: auto;
+    /* text-align: end; */
+    /* padding-right: 10px; */
+    font-size: 10px;
+    color: white;
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    top: 0;
+    left: 0;
+    gap: 12px;
+    margin-right: 5px;
 }

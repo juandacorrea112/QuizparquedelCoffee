@@ -7,6 +7,11 @@
 // })
 
 
+
+// VARIABLE PARA ALMACENAR PUNTOS DE LAS RESPUESTAS CORRECTAS
+let puntos = 0
+let number = document.getElementById('number')
+
 // Esconder las demas preguntas
 window.addEventListener('load', () => {
     document.getElementById("card2").classList.toggle("card2Invisible")
@@ -18,10 +23,9 @@ window.addEventListener('load', () => {
     document.getElementById("card8").classList.toggle("card2Invisible")
     document.getElementById("card9").classList.toggle("card2Invisible")
     document.getElementById("card10").classList.toggle("card2Invisible")
-})
 
-// VARIABLE PARA ALMACENAR PUNTOS DE LAS RESPUESTAS CORRECTAS
-let puntos = 0
+    number.textContent = puntos
+})
 
 
 //FUNCIONALIDAD DE MOSTRAR LAS OPCIONES
@@ -34,6 +38,7 @@ document.getElementById("cardBtn").addEventListener("click", () => {
 // RESPUESTA CORRECTA (A)
 document.getElementById("opcionA").addEventListener('click', () => {
     puntos++
+    number.textContent = puntos
     document.getElementById("opcionA").style.background = "rgb(0, 255, 0)"
     setTimeout(() => {        
         document.getElementById("container").classList.toggle("change")
@@ -168,6 +173,7 @@ document.getElementById("opcionB2").addEventListener('click', () => {
 
 document.getElementById("opcionC2").addEventListener('click', () => {
     puntos++
+    number.textContent = puntos
     document.getElementById("opcionC2").style.background = "rgb(0, 255, 0)"
     setTimeout(() => {        
         document.getElementById("container").classList.toggle("change")
@@ -254,6 +260,7 @@ document.getElementById("opcionB3").addEventListener('click', () => {
 
 document.getElementById("opcionC3").addEventListener('click', () => {
     puntos++
+    number.textContent = puntos
     document.getElementById("opcionC3").style.background = "rgb(0, 255, 0)"
     setTimeout(() => {        
         document.getElementById("container").classList.toggle("change")
@@ -316,6 +323,7 @@ document.getElementById("opcionA4").addEventListener('click', () => {
 
 document.getElementById("opcionB4").addEventListener('click', () => {
     puntos++
+    number.textContent = puntos
     document.getElementById("opcionB4").style.background = "rgb(0, 255, 0)"
     setTimeout(() => {        
         document.getElementById("container").classList.toggle("change")
@@ -379,6 +387,7 @@ document.getElementById("cardBtn5").addEventListener("click", () => {
 // RESPUESTA CORRECTA (A)
 document.getElementById("opcionA5").addEventListener('click', () => {
     puntos++
+    number.textContent = puntos
     console.log(puntos);
     document.getElementById("opcionA5").style.background = "rgb(0, 255, 0)"
     setTimeout(() => {        
@@ -515,6 +524,7 @@ document.getElementById("opcionB6").addEventListener('click', () => {
 
 document.getElementById("opcionC6").addEventListener('click', () => {
     puntos++
+    number.textContent = puntos
     document.getElementById("opcionC6").style.background = "rgb(0, 255, 0)"
     setTimeout(() => {        
         document.getElementById("container").classList.toggle("change")
@@ -603,6 +613,7 @@ document.getElementById("opcionB7").addEventListener('click', () => {
 
 document.getElementById("opcionC7").addEventListener('click', () => {
     puntos++
+    number.textContent = puntos
     document.getElementById("opcionC7").style.background = "rgb(0, 255, 0)"
     setTimeout(() => {        
         document.getElementById("container").classList.toggle("change")
@@ -665,6 +676,7 @@ document.getElementById("opcionA8").addEventListener('click', () => {
 
 document.getElementById("opcionB8").addEventListener('click', () => {
     puntos++
+    number.textContent = puntos
     document.getElementById("opcionB8").style.background = "rgb(0, 255, 0)"
     setTimeout(() => {        
         document.getElementById("container").classList.toggle("change")
@@ -775,6 +787,7 @@ document.getElementById("opcionB9").addEventListener('click', () => {
 
 document.getElementById("opcionC9").addEventListener('click', () => {
     puntos++
+    number.textContent = puntos
     document.getElementById("opcionC9").style.background = "rgb(0, 255, 0)"
     setTimeout(() => {        
         document.getElementById("container").classList.toggle("change")
@@ -861,6 +874,7 @@ document.getElementById("opcionB10").addEventListener('click', () => {
 
 document.getElementById("opcionC10").addEventListener('click', () => {
     puntos++
+    number.textContent = puntos
     document.getElementById("opcionC10").style.background = "rgb(0, 255, 0)"
     setTimeout(() => {        
         document.getElementById("container").classList.toggle("change")
@@ -880,3 +894,4 @@ document.getElementById("opcionC10").addEventListener('click', () => {
     }, 4500);
    
 })
+
