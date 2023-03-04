@@ -13,6 +13,8 @@ window.addEventListener('load', () => {
     document.getElementById("card3").classList.toggle("card2Invisible")
     document.getElementById("card4").classList.toggle("card2Invisible")
     document.getElementById("card5").classList.toggle("card2Invisible")
+    document.getElementById("card6").classList.toggle("card2Invisible")
+    document.getElementById("card7").classList.toggle("card2Invisible")
 })
 
 // VARIABLE PARA ALMACENAR PUNTOS DE LAS RESPUESTAS CORRECTAS
@@ -390,7 +392,7 @@ document.getElementById("opcionA5").addEventListener('click', () => {
     }, 3500);
 
     setTimeout(() => {
-        pregunta5()
+        pregunta6()
     }, 4500);
    
 })
@@ -398,7 +400,6 @@ document.getElementById("opcionA5").addEventListener('click', () => {
 // RESPUESAT INCORRECTA (B)
 
 document.getElementById("opcionB5").addEventListener('click', () => {
-    puntos++
     console.log(puntos);
     document.getElementById("opcionB5").style.background = "red"
     setTimeout(() => {        
@@ -415,7 +416,7 @@ document.getElementById("opcionB5").addEventListener('click', () => {
     }, 3500);
 
     setTimeout(() => {
-        pregunta5()
+        pregunta6()
     }, 4500);
    
 })
@@ -439,7 +440,183 @@ document.getElementById("opcionC5").addEventListener('click', () => {
     }, 3500);
 
     setTimeout(() => {
-        pregunta5()
+        pregunta6()
+    }, 4500);
+   
+})
+
+
+
+
+// PREGUNTA 6
+
+function pregunta6() {
+    // alert('oh yeah')
+    document.getElementById("card6").classList.toggle("card2Invisible")
+}
+
+
+//FUNCIONALIDAD DE MOSTRAR OPCIONES
+
+document.getElementById("cardBtn6").addEventListener("click", () => {
+    document.getElementById("container").classList.toggle("change")
+})
+
+
+// RESPUESTA INCORRECTA (A)
+document.getElementById("opcionA6").addEventListener('click', () => {
+    document.getElementById("opcionA6").style.background = "red"
+    setTimeout(() => {        
+        document.getElementById("container").classList.toggle("change")
+    }, 900);
+
+    setTimeout(() => {
+        document.getElementById("card-box6").classList.add("card-boxClose")
+        document.getElementById('card-contact6').classList.add("card-contactClose")
+    }, 2000);
+
+    setTimeout(() => {
+        document.getElementById("card5").style.display = "none"
+    }, 3500);
+
+    setTimeout(() => {
+        pregunta7()
+    }, 4500);
+   
+})
+
+// RESPUESAT INCORRECTA (B)
+
+document.getElementById("opcionB6").addEventListener('click', () => {
+    document.getElementById("opcionB6").style.background = "red"
+    setTimeout(() => {        
+        document.getElementById("container").classList.toggle("change")
+    }, 900);
+
+    setTimeout(() => {
+        document.getElementById("card-box6").classList.add("card-boxClose")
+        document.getElementById('card-contact6').classList.add("card-contactClose")
+    }, 2000);
+
+    setTimeout(() => {
+        document.getElementById("card6").style.display = "none"
+    }, 3500);
+
+    setTimeout(() => {
+        pregunta7()
+    }, 4500);
+   
+})
+
+
+// RESPUESAT CORRECTA (C)
+
+document.getElementById("opcionC6").addEventListener('click', () => {
+    puntos++
+    document.getElementById("opcionC6").style.background = "rgb(0, 255, 0)"
+    setTimeout(() => {        
+        document.getElementById("container").classList.toggle("change")
+    }, 900);
+
+    setTimeout(() => {
+        document.getElementById("card-box6").classList.add("card-boxClose")
+        document.getElementById('card-contact6').classList.add("card-contactClose")
+    }, 2000);
+
+    setTimeout(() => {
+        document.getElementById("card6").style.display = "none"
+    }, 3500);
+
+    setTimeout(() => {
+        pregunta7()
+    }, 4500);
+   
+})
+
+
+
+
+// PREGUNTA 7
+
+function pregunta7() {
+    // alert('oh yeah')
+    document.getElementById("card7").classList.toggle("card2Invisible")
+}
+
+
+//FUNCIONALIDAD DE MOSTRAR OPCIONES
+
+document.getElementById("cardBtn7").addEventListener("click", () => {
+    document.getElementById("container").classList.toggle("change")
+})
+
+
+// RESPUESTA INCORRECTA (A)
+document.getElementById("opcionA7").addEventListener('click', () => {
+    document.getElementById("opcionA7").style.background = "red"
+    setTimeout(() => {        
+        document.getElementById("container").classList.toggle("change")
+    }, 900);
+
+    setTimeout(() => {
+        document.getElementById("card-box7").classList.add("card-boxClose")
+        document.getElementById('card-contact7').classList.add("card-contactClose")
+    }, 2000);
+
+    setTimeout(() => {
+        document.getElementById("card7").style.display = "none"
+    }, 3500);
+
+    setTimeout(() => {
+        pregunta7()
+    }, 4500);
+   
+})
+
+// RESPUESAT INCORRECTA (B)
+
+document.getElementById("opcionB7").addEventListener('click', () => {
+    document.getElementById("opcionB7").style.background = "red"
+    setTimeout(() => {        
+        document.getElementById("container").classList.toggle("change")
+    }, 900);
+
+    setTimeout(() => {
+        document.getElementById("card-box7").classList.add("card-boxClose")
+        document.getElementById('card-contact7').classList.add("card-contactClose")
+    }, 2000);
+
+    setTimeout(() => {
+        document.getElementById("card7").style.display = "none"
+    }, 3500);
+
+    setTimeout(() => {
+        pregunta7()
+    }, 4500);
+   
+})
+
+
+// RESPUESAT CORRECTA (C)
+
+document.getElementById("opcionC7").addEventListener('click', () => {
+    puntos++
+    document.getElementById("opcionC7").style.background = "rgb(0, 255, 0)"
+    setTimeout(() => {        
+        document.getElementById("container").classList.toggle("change")
+    }, 900);
+
+    setTimeout(() => {
+        document.getElementById("card-box7").classList.add("card-boxClose")
+        document.getElementById('card-contact7').classList.add("card-contactClose")
+    }, 2000);
+
+    setTimeout(() => {
+        document.getElementById("card7").style.display = "none"
+    }, 3500);
+
+    setTimeout(() => {
+        pregunta7()
     }, 4500);
    
 })
