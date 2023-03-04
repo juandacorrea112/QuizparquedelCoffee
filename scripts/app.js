@@ -16,6 +16,7 @@ window.addEventListener('load', () => {
     document.getElementById("card6").classList.toggle("card2Invisible")
     document.getElementById("card7").classList.toggle("card2Invisible")
     document.getElementById("card8").classList.toggle("card2Invisible")
+    document.getElementById("card9").classList.toggle("card2Invisible")
 })
 
 // VARIABLE PARA ALMACENAR PUNTOS DE LAS RESPUESTAS CORRECTAS
@@ -401,7 +402,6 @@ document.getElementById("opcionA5").addEventListener('click', () => {
 // RESPUESAT INCORRECTA (B)
 
 document.getElementById("opcionB5").addEventListener('click', () => {
-    console.log(puntos);
     document.getElementById("opcionB5").style.background = "red"
     setTimeout(() => {        
         document.getElementById("container").classList.toggle("change")
@@ -477,7 +477,7 @@ document.getElementById("opcionA6").addEventListener('click', () => {
     }, 2000);
 
     setTimeout(() => {
-        document.getElementById("card5").style.display = "none"
+        document.getElementById("card6").style.display = "none"
     }, 3500);
 
     setTimeout(() => {
@@ -655,12 +655,12 @@ document.getElementById("opcionA8").addEventListener('click', () => {
     }, 3500);
 
     setTimeout(() => {
-        pregunta7()
+        pregunta9()
     }, 4500);
    
 })
 
-// RESPUESAT INCORRECTA (B)
+// RESPUESAT CORRECTA (B)
 
 document.getElementById("opcionB8").addEventListener('click', () => {
     puntos++
@@ -679,7 +679,7 @@ document.getElementById("opcionB8").addEventListener('click', () => {
     }, 3500);
 
     setTimeout(() => {
-        pregunta7()
+        pregunta9()
     }, 4500);
    
 })
@@ -700,6 +700,92 @@ document.getElementById("opcionC8").addEventListener('click', () => {
 
     setTimeout(() => {
         document.getElementById("card8").style.display = "none"
+    }, 3500);
+
+    setTimeout(() => {
+        pregunta9()
+    }, 4500);
+   
+})
+
+
+// PREGUNTA 9
+
+function pregunta9() {
+    // alert('oh yeah')
+    document.getElementById("card9").classList.toggle("card2Invisible")
+}
+
+
+//FUNCIONALIDAD DE MOSTRAR OPCIONES
+
+document.getElementById("cardBtn9").addEventListener("click", () => {
+    document.getElementById("container").classList.toggle("change")
+})
+
+
+// RESPUESTA INCORRECTA (A)
+document.getElementById("opcionA9").addEventListener('click', () => {
+    document.getElementById("opcionA9").style.background = "red"
+    setTimeout(() => {        
+        document.getElementById("container").classList.toggle("change")
+    }, 900);
+
+    setTimeout(() => {
+        document.getElementById("card-box9").classList.add("card-boxClose")
+        document.getElementById('card-contact9').classList.add("card-contactClose")
+    }, 2000);
+
+    setTimeout(() => {
+        document.getElementById("card9").style.display = "none"
+    }, 3500);
+
+    setTimeout(() => {
+        pregunta7()
+    }, 4500);
+   
+})
+
+// RESPUESAT CORRECTA (B)
+
+document.getElementById("opcionB9").addEventListener('click', () => {
+    document.getElementById("opcionB9").style.background = "red"
+    setTimeout(() => {        
+        document.getElementById("container").classList.toggle("change")
+    }, 900);
+
+    setTimeout(() => {
+        document.getElementById("card-box9").classList.add("card-boxClose")
+        document.getElementById('card-contact9').classList.add("card-contactClose")
+    }, 2000);
+
+    setTimeout(() => {
+        document.getElementById("card9").style.display = "none"
+    }, 3500);
+
+    setTimeout(() => {
+        pregunta7()
+    }, 4500);
+   
+})
+
+
+// RESPUESAT CORRECTA (C)
+
+document.getElementById("opcionC9").addEventListener('click', () => {
+    puntos++
+    document.getElementById("opcionC9").style.background = "rgb(0, 255, 0)"
+    setTimeout(() => {        
+        document.getElementById("container").classList.toggle("change")
+    }, 900);
+
+    setTimeout(() => {
+        document.getElementById("card-box9").classList.add("card-boxClose")
+        document.getElementById('card-contact9').classList.add("card-contactClose")
+    }, 2000);
+
+    setTimeout(() => {
+        document.getElementById("card9").style.display = "none"
     }, 3500);
 
     setTimeout(() => {
