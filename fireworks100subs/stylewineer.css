@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;800&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Raleway', sans-serif;
+}
+
+body {
+	background-image: url('/images/Torre-Mirador-Parque-del-Cafe.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+div {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	height: 100vh;
+}
+
+div h1 {
+	color: #fff;
+	font-size: 10em;
+	z-index: 100;
+}
+
+div h1 span {
+	-webkit-text-stroke: 3px #fff;
+	color: transparent;
+}
+
+div p {
+	color: #fff;
+	font-size: 3em;
+	z-index: 100;
+	text-align: center;
+}
