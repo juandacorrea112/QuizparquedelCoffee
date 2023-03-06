@@ -1,563 +1,545 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
-    <link rel="stylesheet" href="/style/styleQuiz.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/style/styleQuiz.css" />
     <title>Quiz Coffee</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <div class="container" id="container">
+      <div class="puntos">
+        <h2>Puntos:</h2>
+        <h2 id="number"></h2>
+      </div>
 
-        <div class="puntos">
-            <h2>Puntos: </h2>
-            <h2 id="number"></h2>
+      <!-- pregunta 1 -->
+
+      <div id="card" class="card">
+        <div id="card-box" class="card-box">
+          <div class="image">
+            <img src="/images/icons/Logoparque.jpg" alt="..." />
+          </div>
+          <div class="board-data">
+            <h3>1 ¿Colombia es</h3>
+            <p>exportador de cafe?</p>
+          </div>
+          <button class="card-btn" id="cardBtn">
+            <span class="card-btn-contact">RESPONDER</span>
+            <i class="fas fa-angle-up"></i>
+          </button>
         </div>
-        
-        <!-- pregunta 1 -->
-        
-        <div id="card" class="card">
-            <div id="card-box" class="card-box">
-                <div class="image">
-                    <img src="/images/icons/Logoparque.jpg" alt="...">
-                </div>
-                <div class="board-data">
-                    <h3>1 ¿Colombia es</h3>
-                    <p>exportador de cafe?</p>
-                </div>
-                <button class="card-btn" id="cardBtn">
-                    <span class="card-btn-contact">RESPONDER</span>
-                    <i class="fas fa-angle-up"></i>
-                </button>
-            </div>
-            <div id="card-contact" class="card-contact">
-                <h4>opciones</h4>
-            </div>
-            <div id="opcionA" class="social-info email">
-                <div class="icon-wrapper">
-                    <i class="fas fab-envelope">A</i>
-                </div>
-                <div class="social-details">
-                    <h4>Si</h4>
-                    <p>su produccion es muy provechosa y el clima ayuda bastante</p>
-                </div>
-            </div>
-
-            <div id="opcionB" class="social-info fb">
-                <div class="icon-wrapper">
-                    <i class="fab fab-facebook-square">B</i>
-                </div>
-                <div class="social-details">
-                    <h4>No</h4>
-                    <p>el clima es muy malo para tan si quiera cultivar cafe</p>
-                </div>
-            </div>
-
-            <div id="opcionC" class="social-info linkedin">
-                <div class="icon-wrapper">
-                    <i class="fab fab-linkedin">C</i>
-                </div>
-                <div class="social-details">
-                    <h4>No es seguro</h4>
-                    <p>Talvez se podria revisar el terreno y llevarse a cabo</p>
-                </div>
-            </div>
-
+        <div id="card-contact" class="card-contact">
+          <h4>opciones</h4>
+        </div>
+        <div id="opcionA" class="social-info email">
+          <div class="icon-wrapper">
+            <i class="fas fab-envelope">A</i>
+          </div>
+          <div class="social-details">
+            <h4>Si</h4>
+            <p>su produccion es muy provechosa y el clima ayuda bastante</p>
+          </div>
         </div>
 
-        <!-- PREGUNTA 2 -->
-
-        <div id="card2" class="card2">
-            <div id="card-box2" class="card-box">
-                <div class="image">
-                    <img src="/images/icons/Logoparque.jpg" alt="...">
-                </div>
-                <div class="board-data">
-                    <h3>2 ¿Donde hubo mayor</h3>
-                    <p>desarrollo cafetero en Colombia?</p>
-                </div>
-                <button class="card-btn" id="cardBtn2">
-                    <span class="card-btn-contact">RESPONDER</span>
-                    <i class="fas fa-angle-up"></i>
-                </button>
-            </div>
-            <div id="card-contact2" class="card-contact">
-                <h4>opciones</h4>
-            </div>
-            <div id="opcionA2" class="social-info email">
-                <div class="icon-wrapper">
-                    <i class="fas fab-envelope">A</i>
-                </div>
-                <div class="social-details">
-                    <h4>En bogota</h4>
-                    <p>Ya que es la capital y tiene mas dominio de todo en el pais</p>
-                </div>
-            </div>
-
-            <div id="opcionB2" class="social-info fb">
-                <div class="icon-wrapper">
-                    <i class="fab fab-facebook-square">B</i>
-                </div>
-                <div class="social-details">
-                    <h4>En salazar de las Palmas</h4>
-                    <p>ya que alli nacio el cafe en colombia</p>
-                </div>
-            </div>
-
-            <div id="opcionC2" class="social-info linkedin">
-                <div class="icon-wrapper">
-                    <i class="fab fab-linkedin">C</i>
-                </div>
-                <div class="social-details">
-                    <h4>En el departamento del Huila</h4>
-                    <p>ya que se desplazo a antioquia en produccion y asi encabezo la lista</p>
-                </div>
-            </div>
-
+        <div id="opcionB" class="social-info fb">
+          <div class="icon-wrapper">
+            <i class="fab fab-facebook-square">B</i>
+          </div>
+          <div class="social-details">
+            <h4>No</h4>
+            <p>el clima es muy malo para tan si quiera cultivar cafe</p>
+          </div>
         </div>
 
+        <div id="opcionC" class="social-info linkedin">
+          <div class="icon-wrapper">
+            <i class="fab fab-linkedin">C</i>
+          </div>
+          <div class="social-details">
+            <h4>No es seguro</h4>
+            <p>Talvez se podria revisar el terreno y llevarse a cabo</p>
+          </div>
+        </div>
+      </div>
 
-        <!-- PREGUNTA 3 -->
+      <!-- PREGUNTA 2 -->
 
-
-        <div id="card3" class="card3">
-            <div id="card-box3" class="card-box">
-                <div class="image">
-                    <img src="/images/icons/Logoparque.jpg" alt="...">
-                </div>
-                <div class="board-data">
-                    <h3>3 ¿Cual es baile popular</h3>
-                    <p>de la cultura colombiana?</p>
-                </div>
-                <button class="card-btn" id="cardBtn3">
-                    <span class="card-btn-contact">RESPONDER</span>
-                    <i class="fas fa-angle-up"></i>
-                </button>
-            </div>
-            <div id="card-contact3" class="card-contact">
-                <h4>opciones</h4>
-            </div>
-            <div id="opcionA3" class="social-info email">
-                <div class="icon-wrapper">
-                    <i class="fas fab-envelope">A</i>
-                </div>
-                <div class="social-details">
-                    <h4>La salsa</h4>
-                    <p>Ya que es uno de los bailes mas representativos del pais</p>
-                </div>
-            </div>
-
-            <div id="opcionB3" class="social-info fb">
-                <div class="icon-wrapper">
-                    <i class="fab fab-facebook-square">B</i>
-                </div>
-                <div class="social-details">
-                    <h4>La cumbia</h4>
-                    <p>Ya que la cumbia es muy representativa a nivel nacional e internacional</p>
-                </div>
-            </div>
-
-            <div id="opcionC3" class="social-info linkedin">
-                <div class="icon-wrapper">
-                    <i class="fab fab-linkedin">C</i>
-                </div>
-                <div class="social-details">
-                    <h4>El vallenato</h4>
-                    <p>Ya que representa lo que es colombia, a su gente y su cultura</p>
-                </div>
-            </div>
-
+      <div id="card2" class="card2">
+        <div id="card-box2" class="card-box">
+          <div class="image">
+            <img src="/images/icons/Logoparque.jpg" alt="..." />
+          </div>
+          <div class="board-data">
+            <h3>2 ¿Donde hubo mayor</h3>
+            <p>desarrollo cafetero en Colombia?</p>
+          </div>
+          <button class="card-btn" id="cardBtn2">
+            <span class="card-btn-contact">RESPONDER</span>
+            <i class="fas fa-angle-up"></i>
+          </button>
+        </div>
+        <div id="card-contact2" class="card-contact">
+          <h4>opciones</h4>
+        </div>
+        <div id="opcionA2" class="social-info email">
+          <div class="icon-wrapper">
+            <i class="fas fab-envelope">A</i>
+          </div>
+          <div class="social-details">
+            <h4>En bogota</h4>
+            <p>Ya que es la capital y tiene mas dominio de todo en el pais</p>
+          </div>
         </div>
 
-
-
-
-        <!-- PREGUNTA 4 -->
-
-
-        <div id="card4" class="card3">
-            <div id="card-box4" class="card-box">
-                <div class="image">
-                    <img src="/images/icons/Logoparque.jpg" alt="...">
-                </div>
-                <div class="board-data">
-                    <h3>4 ¿Que te imaginas que es</h3>
-                    <p>un cafe glace?</p>
-                </div>
-                <button class="card-btn" id="cardBtn4">
-                    <span class="card-btn-contact">RESPONDER</span>
-                    <i class="fas fa-angle-up"></i>
-                </button>
-            </div>
-            <div id="card-contact4" class="card-contact">
-                <h4>opciones</h4>
-            </div>
-            <div id="opcionA4" class="social-info email">
-                <div class="icon-wrapper">
-                    <i class="fas fab-envelope">A</i>
-                </div>
-                <div class="social-details">
-                    <h4>Un cafe con leche</h4>
-                    <p>Ya que asi se dice leche en ingles</p>
-                </div>
-            </div>
-
-            <div id="opcionB4" class="social-info fb">
-                <div class="icon-wrapper">
-                    <i class="fab fab-facebook-square">B</i>
-                </div>
-                <div class="social-details">
-                    <h4>Es un cafe con hielo</h4>
-                    <p>Ya que Glace hace referencia al frio o helado</p>
-                </div>
-            </div>
-
-            <div id="opcionC4" class="social-info linkedin">
-                <div class="icon-wrapper">
-                    <i class="fab fab-linkedin">C</i>
-                </div>
-                <div class="social-details">
-                    <h4>Es un cafe con azucar</h4>
-                    <p>Ya que asi referencian un cafe amargo a un cafe dulce</p>
-                </div>
-            </div>
-
+        <div id="opcionB2" class="social-info fb">
+          <div class="icon-wrapper">
+            <i class="fab fab-facebook-square">B</i>
+          </div>
+          <div class="social-details">
+            <h4>En salazar de las Palmas</h4>
+            <p>ya que alli nacio el cafe en colombia</p>
+          </div>
         </div>
 
+        <div id="opcionC2" class="social-info linkedin">
+          <div class="icon-wrapper">
+            <i class="fab fab-linkedin">C</i>
+          </div>
+          <div class="social-details">
+            <h4>En el departamento del Huila</h4>
+            <p>
+              ya que se desplazo a antioquia en produccion y asi encabezo la
+              lista
+            </p>
+          </div>
+        </div>
+      </div>
 
+      <!-- PREGUNTA 3 -->
 
-        <!-- PREGUNTA 5 -->
-
-
-        <div id="card5" class="card3">
-            <div id="card-box5" class="card-box">
-                <div class="image">
-                    <img src="/images/icons/Logoparque.jpg" alt="...">
-                </div>
-                <div class="board-data">
-                    <h3>5 ¿Dónde se ubican las dos montañas</h3>
-                    <p>más altas de colombia?</p>
-                </div>
-                <button class="card-btn" id="cardBtn5">
-                    <span class="card-btn-contact">RESPONDER</span>
-                    <i class="fas fa-angle-up"></i>
-                </button>
-            </div>
-            <div id="card-contact5" class="card-contact">
-                <h4>opciones</h4>
-            </div>
-            <div id="opcionA5" class="social-info email">
-                <div class="icon-wrapper">
-                    <i class="fas fab-envelope">A</i>
-                </div>
-                <div class="social-details">
-                    <h4>Nevado del Ruiz y Ritacuba Negro</h4>
-                    <p>Y sus coordenadas son 4°53'33″N 75°19'25″O</p>
-                </div>
-            </div>
-
-            <div id="opcionB5" class="social-info fb">
-                <div class="icon-wrapper">
-                    <i class="fab fab-facebook-square">B</i>
-                </div>
-                <div class="social-details">
-                    <h4>Solamente Nevado del Tolima</h4>
-                    <p>Ya que colomnia tiene una sola montaña como la mas alta</p>
-                </div>
-            </div>
-
-            <div id="opcionC5" class="social-info linkedin">
-                <div class="icon-wrapper">
-                    <i class="fab fab-linkedin">C</i>
-                </div>
-                <div class="social-details">
-                    <h4>Solamente Nevado de Santa Isabel</h4>
-                    <p>Y sus coordernadas son 4°49'00″N 75°22'00″O</p>
-                </div>
-            </div>
-
+      <div id="card3" class="card3">
+        <div id="card-box3" class="card-box">
+          <div class="image">
+            <img src="/images/icons/Logoparque.jpg" alt="..." />
+          </div>
+          <div class="board-data">
+            <h3>3 ¿Cual es baile popular</h3>
+            <p>de la cultura colombiana?</p>
+          </div>
+          <button class="card-btn" id="cardBtn3">
+            <span class="card-btn-contact">RESPONDER</span>
+            <i class="fas fa-angle-up"></i>
+          </button>
+        </div>
+        <div id="card-contact3" class="card-contact">
+          <h4>opciones</h4>
+        </div>
+        <div id="opcionA3" class="social-info email">
+          <div class="icon-wrapper">
+            <i class="fas fab-envelope">A</i>
+          </div>
+          <div class="social-details">
+            <h4>La salsa</h4>
+            <p>Ya que es uno de los bailes mas representativos del pais</p>
+          </div>
         </div>
 
-
-        <!-- PREGUNTA 6 -->
-
-
-        <div id="card6" class="card3">
-            <div id="card-box6" class="card-box">
-                <div class="image">
-                    <img src="/images/icons/Logoparque.jpg" alt="...">
-                </div>
-                <div class="board-data">
-                    <h3>6 ¿En que hemisferio se ubica</h3>
-                    <p>nuestro pais amado Colombia?</p>
-                </div>
-                <button class="card-btn" id="cardBtn6">
-                    <span class="card-btn-contact">RESPONDER</span>
-                    <i class="fas fa-angle-up"></i>
-                </button>
-            </div>
-            <div id="card-contact6" class="card-contact">
-                <h4>opciones</h4>
-            </div>
-            <div id="opcionA6" class="social-info email">
-                <div class="icon-wrapper">
-                    <i class="fas fab-envelope">A</i>
-                </div>
-                <div class="social-details">
-                    <h4>Completamente en el hemisferio norte</h4>
-                    <p>Ya que asi lo muestra el globo o mapa terraqueo</p>
-                </div>
-            </div>
-
-            <div id="opcionB6" class="social-info fb">
-                <div class="icon-wrapper">
-                    <i class="fab fab-facebook-square">B</i>
-                </div>
-                <div class="social-details">
-                    <h4>Completamente en el hemisferio sur</h4>
-                    <p>Ya que colombia al encontrarse debajo de estados unidos, ese es su hemisferio</p>
-                </div>
-            </div>
-
-            <div id="opcionC6" class="social-info linkedin">
-                <div class="icon-wrapper">
-                    <i class="fab fab-linkedin">C</i>
-                </div>
-                <div class="social-details">
-                    <h4>El 70% este en el norte y el 30% en el sur</h4>
-                    <p>Ya que colombia no esta del todo en la mitad del hemisferio</p>
-                </div>
-            </div>
-
+        <div id="opcionB3" class="social-info fb">
+          <div class="icon-wrapper">
+            <i class="fab fab-facebook-square">B</i>
+          </div>
+          <div class="social-details">
+            <h4>La cumbia</h4>
+            <p>
+              Ya que la cumbia es muy representativa a nivel nacional e
+              internacional
+            </p>
+          </div>
         </div>
 
+        <div id="opcionC3" class="social-info linkedin">
+          <div class="icon-wrapper">
+            <i class="fab fab-linkedin">C</i>
+          </div>
+          <div class="social-details">
+            <h4>El vallenato</h4>
+            <p>Ya que representa lo que es colombia, a su gente y su cultura</p>
+          </div>
+        </div>
+      </div>
 
+      <!-- PREGUNTA 4 -->
 
-
-        <!-- PREGUNTA 7 -->
-
-
-        <div id="card7" class="card3">
-            <div id="card-box7" class="card-box">
-                <div class="image">
-                    <img src="/images/icons/Logoparque.jpg" alt="...">
-                </div>
-                <div class="board-data">
-                    <h3>7 ¿Cuantos departamentos</h3>
-                    <p>tiene Colombia?</p>
-                </div>
-                <button class="card-btn" id="cardBtn7">
-                    <span class="card-btn-contact">RESPONDER</span>
-                    <i class="fas fa-angle-up"></i>
-                </button>
-            </div>
-            <div id="card-contact7" class="card-contact">
-                <h4>opciones</h4>
-            </div>
-            <div id="opcionA7" class="social-info email">
-                <div class="icon-wrapper">
-                    <i class="fas fab-envelope">A</i>
-                </div>
-                <div class="social-details">
-                    <h4>Tiene 15</h4>
-                    <p>Ya que son tan grandes que alcanzan a ocupar todo el mapa colombiano</p>
-                </div>
-            </div>
-
-            <div id="opcionB7" class="social-info fb">
-                <div class="icon-wrapper">
-                    <i class="fab fab-facebook-square">B</i>
-                </div>
-                <div class="social-details">
-                    <h4>Tiene 65</h4>
-                    <p>Ya que son tan pequeños caben perfectamente en el mapa colombiano</p>
-                </div>
-            </div>
-
-            <div id="opcionC7" class="social-info linkedin">
-                <div class="icon-wrapper">
-                    <i class="fab fab-linkedin">C</i>
-                </div>
-                <div class="social-details">
-                    <h4>Son 32 departamentos</h4>
-                    <p>Ya que literamnete esa es la cantidad de departamentos que tiene colombia</p>
-                </div>
-            </div>
-
+      <div id="card4" class="card3">
+        <div id="card-box4" class="card-box">
+          <div class="image">
+            <img src="/images/icons/Logoparque.jpg" alt="..." />
+          </div>
+          <div class="board-data">
+            <h3>4 ¿Que te imaginas que es</h3>
+            <p>un cafe glace?</p>
+          </div>
+          <button class="card-btn" id="cardBtn4">
+            <span class="card-btn-contact">RESPONDER</span>
+            <i class="fas fa-angle-up"></i>
+          </button>
+        </div>
+        <div id="card-contact4" class="card-contact">
+          <h4>opciones</h4>
+        </div>
+        <div id="opcionA4" class="social-info email">
+          <div class="icon-wrapper">
+            <i class="fas fab-envelope">A</i>
+          </div>
+          <div class="social-details">
+            <h4>Un cafe con leche</h4>
+            <p>Ya que asi se dice leche en ingles</p>
+          </div>
         </div>
 
-
-
-
-        <!-- PREGUNTA 8 -->
-
-
-        <div id="card8" class="card3">
-            <div id="card-box8" class="card-box">
-                <div class="image">
-                    <img src="/images/icons/Logoparque.jpg" alt="...">
-                </div>
-                <div class="board-data">
-                    <h3>8 ¿Cual de los departamentos</h3>
-                    <p>de Colombia es el mas grande?</p>
-                </div>
-                <button class="card-btn" id="cardBtn8">
-                    <span class="card-btn-contact">RESPONDER</span>
-                    <i class="fas fa-angle-up"></i>
-                </button>
-            </div>
-            <div id="card-contact8" class="card-contact">
-                <h4>opciones</h4>
-            </div>
-            <div id="opcionA8" class="social-info email">
-                <div class="icon-wrapper">
-                    <i class="fas fab-envelope">A</i>
-                </div>
-                <div class="social-details">
-                    <h4>Medellin, Antioquia</h4>
-                    <p>Ya que su poblacion es demasiado grande, por lo cual se ha extendido con el tiempo</p>
-                </div>
-            </div>
-
-            <div id="opcionB8" class="social-info fb">
-                <div class="icon-wrapper">
-                    <i class="fab fab-facebook-square">B</i>
-                </div>
-                <div class="social-details">
-                    <h4>El amazonas</h4>
-                    <p>Ya que cuenta con una superficie de 109.665 Km²</p>
-                </div>
-            </div>
-
-            <div id="opcionC8" class="social-info linkedin">
-                <div class="icon-wrapper">
-                    <i class="fab fab-linkedin">C</i>
-                </div>
-                <div class="social-details">
-                    <h4>Manizales, Caldas</h4>
-                    <p>Ya que su superficie en el pais es de 508 km²</p>
-                </div>
-            </div>
-
+        <div id="opcionB4" class="social-info fb">
+          <div class="icon-wrapper">
+            <i class="fab fab-facebook-square">B</i>
+          </div>
+          <div class="social-details">
+            <h4>Es un cafe con hielo</h4>
+            <p>Ya que Glace hace referencia al frio o helado</p>
+          </div>
         </div>
 
+        <div id="opcionC4" class="social-info linkedin">
+          <div class="icon-wrapper">
+            <i class="fab fab-linkedin">C</i>
+          </div>
+          <div class="social-details">
+            <h4>Es un cafe con azucar</h4>
+            <p>Ya que asi referencian un cafe amargo a un cafe dulce</p>
+          </div>
+        </div>
+      </div>
 
-        <!-- PREGUNTA 9 -->
+      <!-- PREGUNTA 5 -->
 
-
-        <div id="card9" class="card3">
-            <div id="card-box9" class="card-box">
-                <div class="image">
-                    <img src="/images/icons/Logoparque.jpg" alt="...">
-                </div>
-                <div class="board-data">
-                    <h3>9 ¿Cuando se celebra el dia de</h3>
-                    <p>la independencia en Colombia?</p>
-                </div>
-                <button class="card-btn" id="cardBtn9">
-                    <span class="card-btn-contact">RESPONDER</span>
-                    <i class="fas fa-angle-up"></i>
-                </button>
-            </div>
-            <div id="card-contact9" class="card-contact">
-                <h4>opciones</h4>
-            </div>
-            <div id="opcionA9" class="social-info email">
-                <div class="icon-wrapper">
-                    <i class="fas fab-envelope">A</i>
-                </div>
-                <div class="social-details">
-                    <h4>El 22 de septiembre</h4>
-                    <p>Es el dia que se celebra la independencia en el pais</p>
-                </div>
-            </div>
-
-            <div id="opcionB9" class="social-info fb">
-                <div class="icon-wrapper">
-                    <i class="fab fab-facebook-square">B</i>
-                </div>
-                <div class="social-details">
-                    <h4>El 10 de abril</h4>
-                    <p>Es el dia que se celebra la independencia en el pais</p>
-                </div>
-            </div>
-
-            <div id="opcionC9" class="social-info linkedin">
-                <div class="icon-wrapper">
-                    <i class="fab fab-linkedin">C</i>
-                </div>
-                <div class="social-details">
-                    <h4>El 20 de julio</h4>
-                    <p>Es el dia que se celebra la independencia en el pais</p>
-                </div>
-            </div>
-
+      <div id="card5" class="card3">
+        <div id="card-box5" class="card-box">
+          <div class="image">
+            <img src="/images/icons/Logoparque.jpg" alt="..." />
+          </div>
+          <div class="board-data">
+            <h3>5 ¿Dónde se ubican las dos montañas</h3>
+            <p>más altas de colombia?</p>
+          </div>
+          <button class="card-btn" id="cardBtn5">
+            <span class="card-btn-contact">RESPONDER</span>
+            <i class="fas fa-angle-up"></i>
+          </button>
+        </div>
+        <div id="card-contact5" class="card-contact">
+          <h4>opciones</h4>
+        </div>
+        <div id="opcionA5" class="social-info email">
+          <div class="icon-wrapper">
+            <i class="fas fab-envelope">A</i>
+          </div>
+          <div class="social-details">
+            <h4>Nevado del Ruiz y Ritacuba Negro</h4>
+            <p>Y sus coordenadas son 4°53'33″N 75°19'25″O</p>
+          </div>
         </div>
 
-
-
-
-
-        <!-- PREGUNTA 10 -->
-
-
-        <div id="card10" class="card3">
-            <div id="card-box10" class="card-box">
-                <div class="image">
-                    <img src="/images/icons/Logoparque.jpg" alt="...">
-                </div>
-                <div class="board-data">
-                    <h3>10 ¿Cual es el ave nacional</h3>
-                    <p>de la republica de colombia?</p>
-                </div>
-                <button class="card-btn" id="cardBtn10">
-                    <span class="card-btn-contact">RESPONDER</span>
-                    <i class="fas fa-angle-up"></i>
-                </button>
-            </div>
-            <div id="card-contact10" class="card-contact">
-                <h4>opciones</h4>
-            </div>
-            <div id="opcionA10" class="social-info email">
-                <div class="icon-wrapper">
-                    <i class="fas fab-envelope">A</i>
-                </div>
-                <div class="social-details">
-                    <h4>El cuervo de las Marianas</h4>
-                    <p>Es el ave nacional de la republica de colombia</p>
-                </div>
-            </div>
-
-            <div id="opcionB10" class="social-info fb">
-                <div class="icon-wrapper">
-                    <i class="fab fab-facebook-square">B</i>
-                </div>
-                <div class="social-details">
-                    <h4>El buitre negro</h4>
-                    <p>Es el ave nacional de la republica de colombia</p>
-                </div>
-            </div>
-
-            <div id="opcionC10" class="social-info linkedin">
-                <div class="icon-wrapper">
-                    <i class="fab fab-linkedin">C</i>
-                </div>
-                <div class="social-details">
-                    <h4>El cóndor de los Andes</h4>
-                    <p>Es el ave nacional de la republica de colombia</p>
-                </div>
-            </div>
-
+        <div id="opcionB5" class="social-info fb">
+          <div class="icon-wrapper">
+            <i class="fab fab-facebook-square">B</i>
+          </div>
+          <div class="social-details">
+            <h4>Solamente Nevado del Tolima</h4>
+            <p>Ya que colomnia tiene una sola montaña como la mas alta</p>
+          </div>
         </div>
 
+        <div id="opcionC5" class="social-info linkedin">
+          <div class="icon-wrapper">
+            <i class="fab fab-linkedin">C</i>
+          </div>
+          <div class="social-details">
+            <h4>Solamente Nevado de Santa Isabel</h4>
+            <p>Y sus coordernadas son 4°49'00″N 75°22'00″O</p>
+          </div>
+        </div>
+      </div>
 
+      <!-- PREGUNTA 6 -->
 
+      <div id="card6" class="card3">
+        <div id="card-box6" class="card-box">
+          <div class="image">
+            <img src="/images/icons/Logoparque.jpg" alt="..." />
+          </div>
+          <div class="board-data">
+            <h3>6 ¿En que hemisferio se ubica</h3>
+            <p>nuestro pais amado Colombia?</p>
+          </div>
+          <button class="card-btn" id="cardBtn6">
+            <span class="card-btn-contact">RESPONDER</span>
+            <i class="fas fa-angle-up"></i>
+          </button>
+        </div>
+        <div id="card-contact6" class="card-contact">
+          <h4>opciones</h4>
+        </div>
+        <div id="opcionA6" class="social-info email">
+          <div class="icon-wrapper">
+            <i class="fas fab-envelope">A</i>
+          </div>
+          <div class="social-details">
+            <h4>Completamente en el hemisferio norte</h4>
+            <p>Ya que asi lo muestra el globo o mapa terraqueo</p>
+          </div>
+        </div>
+
+        <div id="opcionB6" class="social-info fb">
+          <div class="icon-wrapper">
+            <i class="fab fab-facebook-square">B</i>
+          </div>
+          <div class="social-details">
+            <h4>Completamente en el hemisferio sur</h4>
+            <p>
+              Ya que colombia al encontrarse debajo de estados unidos, ese es su
+              hemisferio
+            </p>
+          </div>
+        </div>
+
+        <div id="opcionC6" class="social-info linkedin">
+          <div class="icon-wrapper">
+            <i class="fab fab-linkedin">C</i>
+          </div>
+          <div class="social-details">
+            <h4>El 70% este en el norte y el 30% en el sur</h4>
+            <p>Ya que colombia no esta del todo en la mitad del hemisferio</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- PREGUNTA 7 -->
+
+      <div id="card7" class="card3">
+        <div id="card-box7" class="card-box">
+          <div class="image">
+            <img src="/images/icons/Logoparque.jpg" alt="..." />
+          </div>
+          <div class="board-data">
+            <h3>7 ¿Cuantos departamentos</h3>
+            <p>tiene Colombia?</p>
+          </div>
+          <button class="card-btn" id="cardBtn7">
+            <span class="card-btn-contact">RESPONDER</span>
+            <i class="fas fa-angle-up"></i>
+          </button>
+        </div>
+        <div id="card-contact7" class="card-contact">
+          <h4>opciones</h4>
+        </div>
+        <div id="opcionA7" class="social-info email">
+          <div class="icon-wrapper">
+            <i class="fas fab-envelope">A</i>
+          </div>
+          <div class="social-details">
+            <h4>Tiene 15</h4>
+            <p>
+              Ya que son tan grandes que alcanzan a ocupar todo el mapa
+              colombiano
+            </p>
+          </div>
+        </div>
+
+        <div id="opcionB7" class="social-info fb">
+          <div class="icon-wrapper">
+            <i class="fab fab-facebook-square">B</i>
+          </div>
+          <div class="social-details">
+            <h4>Tiene 65</h4>
+            <p>
+              Ya que son tan pequeños caben perfectamente en el mapa colombiano
+            </p>
+          </div>
+        </div>
+
+        <div id="opcionC7" class="social-info linkedin">
+          <div class="icon-wrapper">
+            <i class="fab fab-linkedin">C</i>
+          </div>
+          <div class="social-details">
+            <h4>Son 32 departamentos</h4>
+            <p>
+              Ya que literamnete esa es la cantidad de departamentos que tiene
+              colombia
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- PREGUNTA 8 -->
+
+      <div id="card8" class="card3">
+        <div id="card-box8" class="card-box">
+          <div class="image">
+            <img src="/images/icons/Logoparque.jpg" alt="..." />
+          </div>
+          <div class="board-data">
+            <h3>8 ¿Cual de los departamentos</h3>
+            <p>de Colombia es el mas grande?</p>
+          </div>
+          <button class="card-btn" id="cardBtn8">
+            <span class="card-btn-contact">RESPONDER</span>
+            <i class="fas fa-angle-up"></i>
+          </button>
+        </div>
+        <div id="card-contact8" class="card-contact">
+          <h4>opciones</h4>
+        </div>
+        <div id="opcionA8" class="social-info email">
+          <div class="icon-wrapper">
+            <i class="fas fab-envelope">A</i>
+          </div>
+          <div class="social-details">
+            <h4>Medellin, Antioquia</h4>
+            <p>
+              Ya que su poblacion es demasiado grande, por lo cual se ha
+              extendido con el tiempo
+            </p>
+          </div>
+        </div>
+
+        <div id="opcionB8" class="social-info fb">
+          <div class="icon-wrapper">
+            <i class="fab fab-facebook-square">B</i>
+          </div>
+          <div class="social-details">
+            <h4>El amazonas</h4>
+            <p>Ya que cuenta con una superficie de 109.665 Km²</p>
+          </div>
+        </div>
+
+        <div id="opcionC8" class="social-info linkedin">
+          <div class="icon-wrapper">
+            <i class="fab fab-linkedin">C</i>
+          </div>
+          <div class="social-details">
+            <h4>Manizales, Caldas</h4>
+            <p>Ya que su superficie en el pais es de 508 km²</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- PREGUNTA 9 -->
+
+      <div id="card9" class="card3">
+        <div id="card-box9" class="card-box">
+          <div class="image">
+            <img src="/images/icons/Logoparque.jpg" alt="..." />
+          </div>
+          <div class="board-data">
+            <h3>9 ¿Cuando se celebra el dia de</h3>
+            <p>la independencia en Colombia?</p>
+          </div>
+          <button class="card-btn" id="cardBtn9">
+            <span class="card-btn-contact">RESPONDER</span>
+            <i class="fas fa-angle-up"></i>
+          </button>
+        </div>
+        <div id="card-contact9" class="card-contact">
+          <h4>opciones</h4>
+        </div>
+        <div id="opcionA9" class="social-info email">
+          <div class="icon-wrapper">
+            <i class="fas fab-envelope">A</i>
+          </div>
+          <div class="social-details">
+            <h4>El 22 de septiembre</h4>
+            <p>Es el dia que se celebra la independencia en el pais</p>
+          </div>
+        </div>
+
+        <div id="opcionB9" class="social-info fb">
+          <div class="icon-wrapper">
+            <i class="fab fab-facebook-square">B</i>
+          </div>
+          <div class="social-details">
+            <h4>El 10 de abril</h4>
+            <p>Es el dia que se celebra la independencia en el pais</p>
+          </div>
+        </div>
+
+        <div id="opcionC9" class="social-info linkedin">
+          <div class="icon-wrapper">
+            <i class="fab fab-linkedin">C</i>
+          </div>
+          <div class="social-details">
+            <h4>El 20 de julio</h4>
+            <p>Es el dia que se celebra la independencia en el pais</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- PREGUNTA 10 -->
+
+      <div id="card10" class="card3">
+        <div id="card-box10" class="card-box">
+          <div class="image">
+            <img src="/images/icons/Logoparque.jpg" alt="..." />
+          </div>
+          <div class="board-data">
+            <h3>10 ¿Cual es el ave nacional</h3>
+            <p>de la republica de colombia?</p>
+          </div>
+          <button class="card-btn" id="cardBtn10">
+            <span class="card-btn-contact">RESPONDER</span>
+            <i class="fas fa-angle-up"></i>
+          </button>
+        </div>
+        <div id="card-contact10" class="card-contact">
+          <h4>opciones</h4>
+        </div>
+        <div id="opcionA10" class="social-info email">
+          <div class="icon-wrapper">
+            <i class="fas fab-envelope">A</i>
+          </div>
+          <div class="social-details">
+            <h4>El cuervo de las Marianas</h4>
+            <p>Es el ave nacional de la republica de colombia</p>
+          </div>
+        </div>
+
+        <div id="opcionB10" class="social-info fb">
+          <div class="icon-wrapper">
+            <i class="fab fab-facebook-square">B</i>
+          </div>
+          <div class="social-details">
+            <h4>El buitre negro</h4>
+            <p>Es el ave nacional de la republica de colombia</p>
+          </div>
+        </div>
+
+        <div id="opcionC10" class="social-info linkedin">
+          <div class="icon-wrapper">
+            <i class="fab fab-linkedin">C</i>
+          </div>
+          <div class="social-details">
+            <h4>El cóndor de los Andes</h4>
+            <p>Es el ave nacional de la republica de colombia</p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="/scripts/app.js"></script>
     <script src="/scripts/jquery-3.6.3.min.js"></script>
-</body>
+  </body>
 </html>
