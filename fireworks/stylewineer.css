@@ -34,7 +34,7 @@ body {
 
 .contMessegeWinn h1 span {
 	-webkit-text-stroke: 3px #fff;
-	color: transparent;
+	/* color: transparent; */
 }
 
 .contMessegeWinn p {
@@ -43,3 +43,4 @@ body {
 	z-index: 100;
 	text-align: center;
 }
+
