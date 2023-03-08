@@ -28,10 +28,10 @@
     // create canvas and get the context
     var canvas = document.createElement('canvas');
     canvas.id = 'fireworksField';
-		canvas.width = SCREEN_WIDTH;
+		canvas.width = "SCREEN_WIDTH";
 		canvas.height = SCREEN_HEIGHT;
-		canvas.style.width  = SCREEN_WIDTH + 'px';
-		canvas.style.height = SCREEN_HEIGHT + 'px';
+		canvas.style.width  = "100" + '%';
+		canvas.style.height = "100" + 'vh';
 		canvas.style.position = 'absolute';
 		canvas.style.top = '0px';
 		canvas.style.left = '0px';

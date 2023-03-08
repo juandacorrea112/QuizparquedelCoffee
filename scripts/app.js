@@ -841,7 +841,9 @@ document.getElementById("opcionA10").addEventListener('click', () => {
     }, 3500);
 
     setTimeout(() => {
-        pregunta7()
+        if (puntos >= 6) {
+            window.location.assign("/fireworks/winner.html")
+        }
     }, 4500);
    
 })
@@ -864,7 +866,9 @@ document.getElementById("opcionB10").addEventListener('click', () => {
     }, 3500);
 
     setTimeout(() => {
-        pregunta7()
+        if (puntos >= 6) {
+            window.location.assign("/fireworks/winner.html")
+        }
     }, 4500);
    
 })
@@ -890,7 +894,9 @@ document.getElementById("opcionC10").addEventListener('click', () => {
     }, 3500);
 
     setTimeout(() => {
-        window.location.assign("/fireworks/winner.html")
+        if (puntos >= 6) {
+            window.location.assign("/fireworks/winner.html")
+        }
     }, 4500);
    
 })

@@ -12,9 +12,11 @@ body {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	width: 100%;
+	height: auto;
 }
 
-div {
+.contMessegeWinn {
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -24,18 +26,18 @@ div {
 	height: 100vh;
 }
 
-div h1 {
+.contMessegeWinn h1 {
 	color: #fff;
 	font-size: 10em;
 	z-index: 100;
 }
 
-div h1 span {
+.contMessegeWinn h1 span {
 	-webkit-text-stroke: 3px #fff;
 	color: transparent;
 }
 
-div p {
+.contMessegeWinn p {
 	color: #fff;
 	font-size: 3em;
 	z-index: 100;
