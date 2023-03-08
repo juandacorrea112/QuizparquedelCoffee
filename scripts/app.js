@@ -846,7 +846,7 @@ document.getElementById("opcionA10").addEventListener('click', () => {
    
 })
 
-// RESPUESAT CORRECTA (B)
+// RESPUESAT INCORRECTA (B)
 
 document.getElementById("opcionB10").addEventListener('click', () => {
     document.getElementById("opcionB10").style.background = "red"
@@ -890,7 +890,7 @@ document.getElementById("opcionC10").addEventListener('click', () => {
     }, 3500);
 
     setTimeout(() => {
-        pregunta7()
+        window.location.assign("/fireworks/winner.html")
     }, 4500);
    
 })
