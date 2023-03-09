@@ -249,7 +249,7 @@ html {
   position: absolute;
   top: 0;
   left: 0;
-  gap: 12px;
+  gap: 0px;
   margin-right: 5px;
 }
 .puntos h2 {
