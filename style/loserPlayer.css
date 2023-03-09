@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.contLoserP{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(27, 27, 27, 0.671), rgba(0, 0, 0, 0.61)), url('/images/TorreMiradorParqueLoser.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* flex-wrap: wrap; */
+    display: flex;
+}
+.contLoserP .infoTheLoser {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contLoserP .infoTheLoser .contLetters {
+    color: white;
+    text-align: center;
+    font-size: 2em;
+}
+
+
+.contLoserP .ContImgsLoser {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contLoserP .ContImgsLoser .contTaza {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+}
+.contLoserP .ContImgsLoser .contTaza img {
+    width: 50%;
+    height: 100%;
+}
+.contLoserP .ContImgsLoser .contLogopark {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.contButtonBack {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.anclaButton {
+    text-decoration: none;
+}
+
+/* boton styles */
+
+.buttons_global_StyleTatto {
+    color: white;
+    border: 2px solid white;
+    background: orange;
+    padding: 10px 20px;
+    border-radius: 3px; 
+    position: relative;
+    z-index: 0; margin-top: 5px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 230px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+  }
+
+
+.buttons_global_StyleTatto:hover {
+  color: black;
+}
+  .buttons_global_StyleTatto::after {
+      content: "";
+      background: white;
+      position: absolute;
+      z-index: -1;
+      display: block;
+      left: -20%;
+      right: -20%;
+      top: 0;
+      bottom: 0;
+      transform: skewX(-45deg) scale(0, 1);
+      transition: all 0.2s ease;
+  }
+  
+  .buttons_global_StyleTatto:hover::after {
+      transition: all 0.3s ease-out;
+      transform: skewX(-45deg) scale(1, 1);
+}
