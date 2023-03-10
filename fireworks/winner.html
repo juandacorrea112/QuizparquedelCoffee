@@ -7,10 +7,10 @@
     <title>Felicidades</title>
   </head>
   <body>
-
+    <div id="lentDarkWinner" class="lentDarkWinner"></div>
     <div class="contMessegeWinn">
-      <h1><span>Felicidades</span></h1>
-      <p>ganaste nuestro quiz con mucha facilidad</p>
+      <h1 id="Felicidades"><span>Felicidades</span></h1>
+      <p id="ganaste">ganaste nuestro quiz con mucha facilidad</p>
     </div>
 
     <!-- Script Librería ScrollReveal.js -->
@@ -59,8 +59,18 @@
 
       window.addEventListener('load', ()=> {
         setTimeout(() => {
-          window.location.assign('/pages/index.html')
+          document.getElementById('lentDarkWinner').classList.toggle('lentDarkRemoveWinner')
+        }, 1000);
+
+        setTimeout(() => {
+          document.getElementById('lentDarkWinner').classList.toggle('lentDarkRemoveWinner')
+          document.getElementById('Felicidades').classList.toggle('Felicidades')
+          document.getElementById('ganaste').classList.toggle('ganaste')
         }, 15000);
+
+        setTimeout(() => {
+          window.location.assign('/pages/index.html')
+        }, 20000);
       })
     </script>
   </body>

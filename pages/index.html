@@ -8,6 +8,7 @@
     <title>Quiz Coffee</title>
   </head>
   <body>
+    <div id="lentdarkIndex" class="lentdarkIndex"></div>
     <div class="contFatherPresent">
       <div class="contBackIm"></div>
 
@@ -26,5 +27,16 @@
     </div>
 
     <script src="/scripts/app.js"></script>
+
+    <!-- Script para desaparecer el lente negro -->
+    <script>
+
+      window.addEventListener('load', ()=> {
+        setTimeout(() => {
+          document.getElementById('lentdarkIndex').classList.toggle('lentHiddenIndex')
+        }, 2000);
+      })
+
+    </script>
   </body>
 </html>
