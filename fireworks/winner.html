@@ -52,10 +52,16 @@
       ScrollReveal().reveal("p", {
         delay: 3000,
         duration: 2500,
-        distance: "800%",
+        distance: "850%",
         origin: "top",
         opacity: null,
       });
+
+      window.addEventListener('load', ()=> {
+        setTimeout(() => {
+          window.location.assign('/pages/index.html')
+        }, 15000);
+      })
     </script>
   </body>
 </html>
