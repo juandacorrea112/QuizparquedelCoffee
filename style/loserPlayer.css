@@ -86,6 +86,8 @@
     text-align: center;
     cursor: pointer;
     border: none;
+    visibility: visible;
+    transition: 1s;
   }
 
 
@@ -109,4 +111,27 @@
   .buttons_global_StyleTatto:hover::after {
       transition: all 0.3s ease-out;
       transform: skewX(-45deg) scale(1, 1);
+}
+
+/* boton invisible */
+.btnHidden {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    transition: 1s;
+}
+
+/* lente negro paraq trancision */
+.lentDark {
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 1s;
+}
+.lentDarkRemove {
+    transition: 1s;
+    background: transparent;
 }

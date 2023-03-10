@@ -8,13 +8,14 @@
     <title>Que lastima</title>
 </head>
 <body>
+    <div id="lentDark" class="lentDark"></div>
     <div class="contLoserP">
         <div class="infoTheLoser">
             <div class="contLetters">
                 <h2>¡ES UNA LASTIMA!</h2>
                 <p>¡Pero lo intentaste! buena suerte para la proxima querido visitante</p>
                 <div class="contButtonBack">
-                    <a class="anclaButton" href="/pages/index.html"><button class="buttons_global_StyleTatto">Terminar</button></a>
+                    <a class="anclaButton" href="/pages/index.html"><button id="btnHidden" class="btnHidden buttons_global_StyleTatto">Terminar</button></a>
                 </div>
             </div>
         </div>
@@ -27,5 +28,17 @@
             </div>
         </div>
     </div>
+
+    <script>
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                document.getElementById('lentDark').classList.toggle("lentDarkRemove")
+            }, 2000);
+            setTimeout(() => {
+                document.getElementById('btnHidden').classList.toggle('btnHidden')
+            }, 1800);
+        })
+
+    </script>
 </body>
 </html>
