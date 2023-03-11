@@ -11,8 +11,12 @@ const rain = () => {
         setTimeout(() => {
             gout.style.animationDuration = time + 's'
             gout.style.left = x + 'px'
-        }, 2100);
+        }, 2300);
         
+        setTimeout(() => {
+            // gout.style.transition = "1s"
+            gout.style.visibility = "hidden"
+        }, 20000);
 
         container.appendChild(gout)
 

@@ -15,9 +15,6 @@
             <div class="contLetters">
                 <h2>¡ES UNA LASTIMA!</h2>
                 <p>¡Pero lo intentaste! buena suerte para la proxima querido visitante</p>
-                <div class="contButtonBack">
-                    <a class="anclaButton" href="/pages/index.html"><button id="btnHidden" class="btnHidden buttons_global_StyleTatto">Terminar</button></a>
-                </div>
             </div>
         </div>
         <div class="ContImgsLoser">
@@ -40,6 +37,21 @@
             setTimeout(() => {
                 document.getElementById('btnHidden').classList.toggle('btnHidden')
             }, 1800);
+
+
+
+            setTimeout(() => {
+                document.getElementById('lentDark').classList.toggle("lentDarkRemove")
+            }, 19000);
+            setTimeout(() => {
+                document.getElementById('btnHidden').classList.toggle('btnHidden')
+            }, 18800);
+
+
+            
+            setTimeout(() => {
+                window.location.assign('/pages/index.html')
+            }, 20000);
         })
 
     </script>
