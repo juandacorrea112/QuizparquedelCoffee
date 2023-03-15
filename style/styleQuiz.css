@@ -183,15 +183,15 @@ html {
 }
 
 .email .icon-wrapper {
-  background-color: #dd4b39;
+  background-color: red;
 }
 
 .fb .icon-wrapper {
-  background-color: #3b5998;
+  background-color: blue;
 }
 
 .linkedin .icon-wrapper {
-  background-color: #007bb6;
+  background-color: lime;
 }
 
 .icon-wrapper {
@@ -205,15 +205,15 @@ html {
 }
 
 .email h4 {
-  color: #dd4b39;
+  color: red;
 }
 
 .fb h4 {
-  color: #3b5998;
+  color: blue;
 }
 
 .linkedin h4 {
-  color: #007bb6;
+  color: lime;
 }
 
 .social-details p {

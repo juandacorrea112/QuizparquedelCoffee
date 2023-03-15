@@ -14,7 +14,6 @@ const rain = () => {
         }, 2300);
         
         setTimeout(() => {
-            // gout.style.transition = "1s"
             gout.style.visibility = "hidden"
         }, 20000);
 

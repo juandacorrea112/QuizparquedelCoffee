@@ -145,7 +145,7 @@ body {
     width: 100%;
     height: 100%;
     position: absolute;
-    animation: vapour 10s linear infinite;
+    animation: vapour 5s linear infinite;
 }
 
 @keyframes vapour {
