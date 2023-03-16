@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap') */
+
 
 * {
   margin: 0;
@@ -37,7 +37,6 @@ html {
   transition: 0.5s;
   top: 0;
   opacity: 0;
-  /* visibility: hidden; */
 }
 
 .image {
@@ -240,8 +239,6 @@ html {
 .puntos {
   width: 100%;
   height: auto;
-  /* text-align: end; */
-  /* padding-right: 10px; */
   font-size: 10px;
   color: white;
   display: flex;
