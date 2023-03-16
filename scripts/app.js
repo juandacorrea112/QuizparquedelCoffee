@@ -1,12 +1,3 @@
-//IR AL QUIZ
-// document.getElementById("ComenzarQ").addEventListener("click", () => {
-//     document.getElementById("contBton").classList.toggle("contBtonGirar")
-//     setTimeout(() => {
-//         window.location.assign("/pages/quiz.html")
-//     },3000)
-// })
-
-
 
 // VARIABLE PARA ALMACENAR PUNTOS DE LAS RESPUESTAS CORRECTAS
 let puntos = 0
@@ -111,7 +102,6 @@ document.getElementById("opcionC").addEventListener('click', () => {
 // PREGUNTA 2
 
 function pregunta2() {
-    // alert('oh yeah')
     document.getElementById("card2").classList.toggle("card2Invisible")
 }
 
@@ -198,7 +188,6 @@ document.getElementById("opcionC2").addEventListener('click', () => {
 // PREGUNTA 3
 
 function pregunta3() {
-    // alert('oh yeah')
     document.getElementById("card3").classList.toggle("card2Invisible")
 }
 
@@ -285,7 +274,6 @@ document.getElementById("opcionC3").addEventListener('click', () => {
 // PREGUNTA 4
 
 function pregunta4() {
-    // alert('oh yeah')
     document.getElementById("card4").classList.toggle("card2Invisible")
 }
 
@@ -372,7 +360,6 @@ document.getElementById("opcionC4").addEventListener('click', () => {
 // PREGUNTA 5
 
 function pregunta5() {
-    // alert('oh yeah')
     document.getElementById("card5").classList.toggle("card2Invisible")
 }
 
@@ -462,7 +449,6 @@ document.getElementById("opcionC5").addEventListener('click', () => {
 // PREGUNTA 6
 
 function pregunta6() {
-    // alert('oh yeah')
     document.getElementById("card6").classList.toggle("card2Invisible")
 }
 
@@ -551,7 +537,6 @@ document.getElementById("opcionC6").addEventListener('click', () => {
 // PREGUNTA 7
 
 function pregunta7() {
-    // alert('oh yeah')
     document.getElementById("card7").classList.toggle("card2Invisible")
 }
 
@@ -638,7 +623,6 @@ document.getElementById("opcionC7").addEventListener('click', () => {
 // PREGUNTA 8
 
 function pregunta8() {
-    // alert('oh yeah')
     document.getElementById("card8").classList.toggle("card2Invisible")
 }
 
@@ -725,7 +709,6 @@ document.getElementById("opcionC8").addEventListener('click', () => {
 // PREGUNTA 9
 
 function pregunta9() {
-    // alert('oh yeah')
     document.getElementById("card9").classList.toggle("card2Invisible")
 }
 
@@ -812,7 +795,6 @@ document.getElementById("opcionC9").addEventListener('click', () => {
 // PREGUNTA 10
 
 function pregunta10() {
-    // alert('oh yeah')
     document.getElementById("card10").classList.toggle("card2Invisible")
 }
 
