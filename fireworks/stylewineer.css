@@ -61,7 +61,6 @@ body {
 	z-index: 0;
 }
 
-/* letras winner NO visibles */
 .Felicidades {
     transition: 1s;
     display: none;
