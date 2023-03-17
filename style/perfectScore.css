@@ -1,0 +1,15 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body, html {
+    overflow-y: hidden;
+}
+.particulas {
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    border-radius: 50%;
+    /* top: 50px; */
+    position: absolute;
+}
