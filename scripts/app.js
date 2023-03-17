@@ -880,10 +880,13 @@ document.getElementById("opcionC10").addEventListener('click', () => {
     }, 3500);
 
     setTimeout(() => {
-        if (puntos >= 6) {
+        if (puntos >= 6 && puntos < 10) {
             window.location.assign("/fireworks/winner.html")
-            
-        }else{
+        }
+        else if(puntos == 10) {
+            window.location.assign("/pages/perfectScore.html")
+        }
+        else{
             window.location.assign("/pages/loserPlayer.html")
         }
     }, 4500);
