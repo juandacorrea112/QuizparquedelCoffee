@@ -882,6 +882,7 @@ document.getElementById("opcionC10").addEventListener('click', () => {
     setTimeout(() => {
         if (puntos >= 6) {
             window.location.assign("/fireworks/winner.html")
+            
         }else{
             window.location.assign("/pages/loserPlayer.html")
         }

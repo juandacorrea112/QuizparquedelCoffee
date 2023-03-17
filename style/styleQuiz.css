@@ -182,7 +182,7 @@ html {
 }
 
 .email .icon-wrapper {
-  background-color: red;
+  background-color: darkred;
 }
 
 .fb .icon-wrapper {
@@ -204,7 +204,7 @@ html {
 }
 
 .email h4 {
-  color: red;
+  color: darkred;
 }
 
 .fb h4 {
