@@ -229,7 +229,6 @@ html {
 
 /* =============== card2 ================= */
 .card2Invisible {
-  /* opacity: 0; */
   transition: 0.5s;
   display: none;
   visibility: hidden;
