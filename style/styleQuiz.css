@@ -182,7 +182,9 @@ html {
 }
 
 .email .icon-wrapper {
-  background-color: rgba(0, 255, 120, 1);
+  background-color: rgba(255, 66, 0, 1)
+
+  ;
 }
 
 .fb .icon-wrapper {
@@ -190,7 +192,7 @@ html {
 }
 
 .linkedin .icon-wrapper {
-  background-color: yellow;
+  background-color: rgba(255, 208, 0, 1);
 }
 
 .icon-wrapper {
@@ -204,7 +206,9 @@ html {
 }
 
 .email h4 {
-  color: rgba(0, 255, 120, 1);
+  color: rgba(255, 66, 0, 1)
+
+  ;
 }
 
 .fb h4 {
@@ -212,7 +216,7 @@ html {
 }
 
 .linkedin h4 {
-  color: yellow;
+  color: rgba(255, 208, 0, 1);
 }
 
 .social-details p {
