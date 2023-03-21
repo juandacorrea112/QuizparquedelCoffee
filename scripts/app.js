@@ -24,7 +24,6 @@ document.getElementById("cardBtn").addEventListener("click", () => {
     document.getElementById("container").classList.toggle("change")
 })
 
-//SELECCIONAR UNA OPCION PARA RESPONDER (PREGUNTA 1)
 
 // RESPUESTA CORRECTA (A)
 document.getElementById("opcionA").addEventListener('click', () => {
