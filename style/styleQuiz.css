@@ -182,7 +182,7 @@ html {
 }
 
 .email .icon-wrapper {
-  background-color: darkred;
+  background-color: rgb(127, 0, 139);
 }
 
 .fb .icon-wrapper {
@@ -204,7 +204,7 @@ html {
 }
 
 .email h4 {
-  color: darkred;
+  color: rgb(127, 0, 139);
 }
 
 .fb h4 {
@@ -217,7 +217,7 @@ html {
 
 .social-details p {
   font-size: 15px;
-  color: #747474;
+  color: black;
 }
 
 .social-info span {
