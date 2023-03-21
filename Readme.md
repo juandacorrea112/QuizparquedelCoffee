@@ -2,4 +2,4 @@
 <hr></hr>
 <img src="/images/Captura.PNG" alt="...">
 <hr></hr>
-<p>Interfaz inicial de las preguntas del quiz.</p>
+<h2>Interfaz inicial de las preguntas del quiz.</h2>
