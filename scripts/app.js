@@ -1,5 +1,4 @@
 
-// VARIABLE PARA ALMACENAR PUNTOS DE LAS RESPUESTAS CORRECTAS
 let puntos = 0
 let number = document.getElementById('number')
 
