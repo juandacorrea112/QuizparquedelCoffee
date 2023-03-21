@@ -182,7 +182,7 @@ html {
 }
 
 .email .icon-wrapper {
-  background-color: rgb(127, 0, 139);
+  background-color: rgba(0, 255, 120, 1);
 }
 
 .fb .icon-wrapper {
@@ -204,7 +204,7 @@ html {
 }
 
 .email h4 {
-  color: rgb(127, 0, 139);
+  color: rgba(0, 255, 120, 1);
 }
 
 .fb h4 {
