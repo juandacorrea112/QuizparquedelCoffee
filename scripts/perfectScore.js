@@ -89,7 +89,6 @@ function explotar(particula) {
 
 		hijo.setAttribute("data-padre", false);
 
-		//Agregar el hijo :)
 		document.getElementsByTagName("body")[0].append(hijo);
 	}
 
