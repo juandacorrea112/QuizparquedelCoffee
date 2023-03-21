@@ -2,7 +2,7 @@
 let puntos = 0
 let number = document.getElementById('number')
 
-// Esconder las demas preguntas
+// FUNCIONALIDAD ESCONDER LAS DEMAS PREGUUNTAS
 window.addEventListener('load', () => {
     document.getElementById("card2").classList.toggle("card2Invisible")
     document.getElementById("card3").classList.toggle("card2Invisible")
