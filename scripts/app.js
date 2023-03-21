@@ -741,7 +741,7 @@ document.getElementById("opcionA9").addEventListener('click', () => {
    
 })
 
-// RESPUESAT CORRECTA (B)
+// RESPUESAT INCORRECTA (B)
 
 document.getElementById("opcionB9").addEventListener('click', () => {
     document.getElementById("opcionB9").style.background = "red"
