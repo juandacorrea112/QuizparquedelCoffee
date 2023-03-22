@@ -7,3 +7,6 @@
 <h2>Interfaz final de page loserPlayer.</h2>
 <hr></hr>
 <img src="/images/CapturaLoser.PNG" alt="...">
+<h2>Interfaz final de page winner.</h2>
+<hr></hr>
+<img src="/images/CapturaWinner.PNG" alt="...">
