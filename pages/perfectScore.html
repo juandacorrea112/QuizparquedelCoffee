@@ -18,7 +18,10 @@
     <div class="particulas" data-velocidad="0"></div>
 
     <div class="contmessagesPerfecScore">
-        <h1 style="color: white;"><span> ¡Felicidades querido viitante! , pues son pocas las personas que sacaron una puntuacion perfecta.</span></h1>
+        <img src="/images/icons/LogoParqueDelCafe.png" alt="">
+        <h1 style="color: white;"><span> ¡Felicidades querido viitante!</span></h1>
+        <p style="color: white;">Pues son pocas las personas que sacaron una puntuacion perfecta.</p>
+
     </div>
 
 
@@ -32,13 +35,30 @@
 
     <script>
 
-        ScrollReveal().reveal("h1", {
-            delay: 2000,
-            duration: 2000,
-            distance: "1000%",
+        ScrollReveal().reveal("img", {
+            delay: 500,
+            duration: 2500,
+            distance: "1100%",
             origin: "top",
             opacity: null,
         });
+
+        ScrollReveal().reveal("h1", {
+            delay: 300,
+            duration: 2000,
+            distance: "1000%",
+            origin: "left",
+            opacity: null,
+        });
+
+        ScrollReveal().reveal("p", {
+            delay: 500,
+            duration: 2500,
+            distance: "1100%",
+            origin: "right",
+            opacity: null,
+        });
+
 
     </script>
 

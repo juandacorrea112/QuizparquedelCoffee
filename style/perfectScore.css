@@ -15,10 +15,16 @@
 	height: 100vh;
 }
 
-h2{
+p{
+    margin-top: 20px;
+    font-size: 30px;
+    font-family: 'Amatic SC', cursive;
+}
+
+h1{
     font-family: 'Amatic SC', cursive;
     color: white;
-    font-size: 30px;
+    font-size: 50px;
     text-align: center;
 }
 
