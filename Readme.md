@@ -1,5 +1,5 @@
 <h2>Quiz interactivo.</h2>
 <hr></hr>
-<img src="/images/Captura.PNG" alt="...">
+<img src="/images/CapturaR.PNG" alt="...">
 <hr></hr>
 <h2>Interfaz inicial de las preguntas del quiz.</h2>
