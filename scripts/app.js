@@ -1,4 +1,3 @@
-
 let puntos = 0
 let number = document.getElementById('number')
 

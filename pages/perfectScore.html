@@ -18,9 +18,29 @@
     <div class="particulas" data-velocidad="0"></div>
 
     <div class="contmessagesPerfecScore">
-        <h2> <span> ¡Felicidades querido viitante!, pues son pocas las personas que
-                tienen el privilegio de decir que sacaron una puntuacion perfecta.</span></h2>
+        <h1 style="color: white;"><span> ¡Felicidades querido viitante! , pues son pocas las personas que sacaron una puntuacion perfecta.</span></h1>
     </div>
+
+
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="jquery.fireworks.js"></script>
+
+    <script>
+
+        ScrollReveal().reveal("h1", {
+            delay: 2000,
+            duration: 2000,
+            distance: "1000%",
+            origin: "top",
+            opacity: null,
+        });
+
+    </script>
 
     <script>
         window.addEventListener('load', () => {
@@ -29,6 +49,8 @@
             }, 20000);
         })
     </script>
+
+
 
     <script src="/scripts/perfectScore.js"></script>
 
