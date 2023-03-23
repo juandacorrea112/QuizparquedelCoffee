@@ -55,9 +55,7 @@ body {
 }
 
 .lentDarkRemoveWinner {
-	transition: 0.9s;
-    background: transparent;
-	z-index: 0;
+	lentDarkTransition
 }
 
 .Felicidades {

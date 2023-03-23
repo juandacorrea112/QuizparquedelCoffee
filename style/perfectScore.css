@@ -54,3 +54,24 @@ body, html {
     bottom: -100px;
     opacity: .4;
 }
+
+
+.lentDarkTransition {
+    background-color: #303030;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 0.9s;
+	z-index: 1000;
+}
+
+
+
+/*remover lente dark*/
+.lentDarkRemovePerfect {
+    transition: 0.9s;
+    background: transparent;
+	z-index: 0;
+}

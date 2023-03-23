@@ -14,7 +14,7 @@
 
 <body>
 
-    <div class="lentDarkTransition"></div>
+    <div id="lentDarkTransition" class="lentDarkTransition"></div>
 
     <div class="particulas" data-velocidad="0"></div>
 
@@ -70,8 +70,12 @@
         window.addEventListener('load', () => {
 
             setTimeout(() => {
-                // comenzar
-            }, timeout);
+                document.getElementById('lentDarkTransition').classList.toggle('lentDarkRemovePerfect')
+            }, 1000);
+
+            setTimeout(() => {
+                document.getElementById('lentDarkTransition').classList.toggle('lentDarkRemovePerfect')
+            }, 15000);
 
             setTimeout(() => {
                 window.location.assign('/pages/index.html')
