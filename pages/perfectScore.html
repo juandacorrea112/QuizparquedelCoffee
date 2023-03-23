@@ -14,6 +14,7 @@
 
 <body>
 
+    <div class="lentDarkTransition"></div>
 
     <div class="particulas" data-velocidad="0"></div>
 
@@ -67,6 +68,11 @@
 
     <script>
         window.addEventListener('load', () => {
+
+            setTimeout(() => {
+                // comenzar
+            }, timeout);
+
             setTimeout(() => {
                 window.location.assign('/pages/index.html')
             }, 20000);
