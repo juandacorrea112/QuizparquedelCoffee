@@ -13,7 +13,7 @@
   <div class="contMessegeWinn">
     <h1 id="Felicidades"><span>¡Felicitaciones!</span></h1>
     <p id="ganaste">ganaste nuestro quiz con mucha facilidad</p>
-    <p id="number" style="color: white;"></p>
+    <!-- <p id="number" style="color: white;"></p> -->
     <div class="puntos">
     </div>
   </div>
@@ -59,21 +59,7 @@
       opacity: null,
     });
 
-    window.addEventListener('load', () => {
-      setTimeout(() => {
-        document.getElementById('lentDarkWinner').classList.toggle('lentDarkRemoveWinner')
-      }, 1000);
-
-      setTimeout(() => {
-        document.getElementById('lentDarkWinner').classList.toggle('lentDarkRemoveWinner')
-        document.getElementById('Felicidades').classList.toggle('Felicidades')
-        document.getElementById('ganaste').classList.toggle('ganaste')
-      }, 15000);
-
-      setTimeout(() => {
-        window.location.assign('/pages/index.html')
-      }, 20000);
-    })
+    
   </script>
 
 </body>
