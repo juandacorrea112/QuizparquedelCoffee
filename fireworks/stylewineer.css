@@ -45,12 +45,12 @@ body {
 
 .lentDarkWinner {
 	background-color: #303030;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    transition: 0.9s;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	transition: 0.9s;
 	z-index: 1000;
 }
 
@@ -63,6 +63,6 @@ body {
     display: none;
 } */
 .ganaste {
-    transition: 1s;
-    display: none;
+	transition: 1s;
+	display: none;
 }

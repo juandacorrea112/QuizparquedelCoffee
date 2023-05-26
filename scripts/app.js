@@ -1,3 +1,25 @@
+/*===========TIEMPO DE INNACTIVIDAD DEL USUARIO======*/
+const timeInnactivity = 10 * 6 * 1000
+let timeoutId;
+
+// Función para reiniciar el temporizador de inactividad
+function resetTimer() {
+    clearTimeout(timeoutId)
+    timeoutId = setTimeout(logout, timeInnactivity) 
+}
+
+// Función para ejecutar cuando se detecta la inactividad del usuario
+function logout() {
+    window.location.assign('/pages/index.html')
+}
+
+// Escuchar eventos de actividad del usuario
+window.addEventListener('mousemove', resetTimer)
+window.addEventListener('keydown', resetTimer)
+
+//iniciar temporizador de innactividad
+resetTimer()
+
 let puntos = 0
 let number = document.getElementById('number')
 
