@@ -69,7 +69,7 @@ body, html {
 
 
 
-/*remover lente dark*/
+
 .lentDarkRemovePerfect {
     transition: 0.9s;
     background: transparent;

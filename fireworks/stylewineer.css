@@ -54,14 +54,14 @@ body {
 	z-index: 1000;
 }
 
-.lentDarkRemoveWinner {
+/* .lentDarkRemoveWinner {
 	lentDarkTransition
 }
 
 .Felicidades {
     transition: 1s;
     display: none;
-}
+} */
 .ganaste {
     transition: 1s;
     display: none;
