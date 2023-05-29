@@ -1,3 +1,5 @@
+
+
 /*===========TIEMPO DE INNACTIVIDAD DEL USUARIO======*/
 const timeInnactivity = 10 * 6 * 1000
 let timeoutId;
@@ -22,9 +24,10 @@ resetTimer()
 
 let puntos = 0
 let number = document.getElementById('number')
-
+const formPut = document.getElementById('formPut')
 // FUNCIONALIDAD ESCONDER LAS DEMAS PREGUUNTAS
 window.addEventListener('load', () => {
+    formPut.classList.toggle('formAddhidden')
     document.getElementById("card2").classList.toggle("card2Invisible")
     document.getElementById("card3").classList.toggle("card2Invisible")
     document.getElementById("card4").classList.toggle("card2Invisible")
@@ -38,6 +41,23 @@ window.addEventListener('load', () => {
     number.textContent = puntos
 })
 
+
+/* =========== activar formulario =========== */
+
+document.addEventListener('keyup', function(event) {
+    // Verifica si la tecla presionada es "Enter" (código 13)
+    if (event.keyCode === 13) {
+      // Llama a tu función aquí
+        formPut.classList.toggle('formAddhidden')
+        formPut.classList.toggle('formAddquestion')
+    }
+  });
+
+  const closeModal = document.getElementById('closeModal')
+  closeModal.addEventListener('click', function(){
+    formPut.classList.toggle('formAddquestion')
+    formPut.classList.toggle('formAddhidden')
+  })
 
 //FUNCIONALIDAD DE MOSTRAR LAS OPCIONES
 document.getElementById("cardBtn").addEventListener("click", () => {

@@ -1,40 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/style/style.css" />
-    <title>indice</title>
-  </head>
-  <body>
-    <div id="lentdarkIndex" class="lentdarkIndex"></div>
-    <div class="contFatherPresent">
-      <div class="contBackIm"></div>
 
-      <div class="lentDark">
-        <div class="contTittle">
-          <h1>Demuestranos que aprendiste durante el recorrido hecho en el museo del cafe</h1>
-        </div>
-        <div class="contSubtittle">
-          <h2>Resolviendo nuestro sencillo Quiz.</h2>
-        </div>
-        <div id="contBton" class="contBton">
-          <a id="ComenzarQ" href="/pages/quiz.html"><button class="buttons_global_StyleTatto">Comenzar</button></a>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="/style/style.css" />
+  <title>indice</title>
+</head>
+
+<body>
+
+  <!-- /*============== formulario de confirmacion ==============*/ -->
+
+  <div id="formPut" class="">
+    <div class="bannerCoffe">
+      <h2>ingresa tu usuario</h2>
+      <span id="closeModal" class="material-symbols-outlined">
+        close
+      </span>
+    </div>
+    <div class="contInfoBox">
+      <label>usuario: <input type="text" placeholder="usuario"></label>
+      <label>contraseña: <input type="password" placeholder="contraseña"></label>
+      <button>confirmar</button>
+    </div>
+  </div>
+<!-- /*==============================================================*/ -->
+
+  <div id="lentdarkIndex" class="lentdarkIndex"></div>
+  <div class="contFatherPresent">
+    <div class="contBackIm"></div>
+
+    <div class="lentDark">
+      <div class="contTittle">
+        <h1>Demuestranos que aprendiste durante el recorrido hecho en el museo del cafe</h1>
+      </div>
+      <div class="contSubtittle">
+        <h2>Resolviendo nuestro sencillo Quiz.</h2>
+      </div>
+      <div id="contBton" class="contBton">
+        <a id="ComenzarQ" href="/pages/quiz.html"><button class="buttons_global_StyleTatto">Comenzar</button></a>
       </div>
     </div>
-    <script src="/scripts/app.js"></script>
+  </div>
+  <script src="/scripts/app.js"></script>
 
-    <!-- Script para desaparecer el lente negro -->
-    <script>
+  <!-- Script para desaparecer el lente negro -->
+  <script>
 
-      window.addEventListener('load', ()=> {
-        setTimeout(() => {
-          document.getElementById('lentdarkIndex').classList.toggle('lentHiddenIndex')
-        }, 2000);
-      })
+    
+    
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        document.getElementById('lentdarkIndex').classList.toggle('lentHiddenIndex')
+      }, 2000);
+    })
 
-    </script>
-  </body>
+  </script>
+</body>
+
 </html>
