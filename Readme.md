@@ -1,7 +1,7 @@
 <h2>Interfaz final de page principal.</h2>
 <hr></hr>
 <img src="/images/Capturaindex.PNG" alt="...">
-<h2>Interfaz inicial de las preguntas del quiz.</h2>
+<h2>Interfaz inicial de las preguntas.</h2>
 <hr></hr>
 <img src="/images/CapturaR.PNG" alt="...">
 <h2>Interfaz final de page perfectScore.</h2>

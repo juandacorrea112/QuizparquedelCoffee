@@ -114,7 +114,7 @@ body {
       transform: skewX(-45deg) scale(1, 1);
 }
 
-/* boton invisible */
+
 .btnHidden {
     width: 0;
     height: 0;
@@ -122,7 +122,7 @@ body {
     transition: 1s;
 }
 
-/* lente negro paraq trancision */
+
 .lentDark {
     background-color: #303030;
     width: 100%;
