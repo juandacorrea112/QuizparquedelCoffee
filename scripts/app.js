@@ -7,7 +7,7 @@ let timeoutId;
 // Función para reiniciar el temporizador de inactividad
 function resetTimer() {
     clearTimeout(timeoutId)
-    timeoutId = setTimeout(logout, timeInnactivity) 
+    timeoutId = setTimeout(logout, timeInnactivity)
 }
 
 // Función para ejecutar cuando se detecta la inactividad del usuario
@@ -27,7 +27,7 @@ let number = document.getElementById('number')
 const formPut = document.getElementById('formPut')
 // FUNCIONALIDAD ESCONDER LAS DEMAS PREGUUNTAS
 window.addEventListener('load', () => {
-    formPut.classList.toggle('formAddhidden')
+    // formPut.classList.toggle('formAddhidden')
     document.getElementById("card2").classList.toggle("card2Invisible")
     document.getElementById("card3").classList.toggle("card2Invisible")
     document.getElementById("card4").classList.toggle("card2Invisible")
@@ -42,23 +42,72 @@ window.addEventListener('load', () => {
 })
 
 
-/* =========== activar formulario =========== */
+window.addEventListener('load', () => {
+    formPut.classList.toggle('formAddhidden')
+})
 
-document.addEventListener('keyup', function(event) {
+
+/* =========== activar formulario =========== */
+let user = 'juan david'
+let password = 'parque2020'
+const confirmModal = document.getElementById('confirmModal')
+
+/* ----inputs----- */
+let inputName = document.getElementById('inputName')
+let inputPassword = document.getElementById('inputPassword')
+
+/*prueba*/
+let pregunta1 = document.getElementById('pregunta1')
+
+document.addEventListener('keyup', function (event) {
     // Verifica si la tecla presionada es "Enter" (código 13)
     if (event.keyCode === 13) {
-      // Llama a tu función aquí
-        formPut.classList.toggle('formAddhidden')
-        formPut.classList.toggle('formAddquestion')
+        // Llama a tu función aquí
+        formPut.classList.remove('formAddhidden')
+        formPut.classList.add('formAddquestion')
     }
-  });
+});
 
-  const closeModal = document.getElementById('closeModal')
-  closeModal.addEventListener('click', function(){
+const closeModal = document.getElementById('closeModal')
+closeModal.addEventListener('click', function () {
     formPut.classList.toggle('formAddquestion')
     formPut.classList.toggle('formAddhidden')
-  })
+})
 
+confirmModal.addEventListener('click', () => {
+    if (inputName.value == user && inputPassword.value == password) {
+
+        formPut.classList.toggle('formAddhidden')
+        formPut.classList.toggle('formAddquestion')
+
+        fetch('/scripts/preguntas.txt')
+            .then(response => response.text())
+            .then(data => {
+                // Divide el contenido en párrafos
+                const preguntas = data.split('\n')
+                // pregunta1.textContent = preguntas[0]
+                // pruebadecambio.textContent = preguntas[0]
+                console.log(preguntas);
+
+
+                // parrafdes2015.textContent = parrafos[3]
+
+                setTimeout(() => {
+                    Swal.fire({
+                        position: 'center',
+                        icon: 'success',
+                        title: 'haz actualizado las preguntas correactamente',
+                        showConfirmButton: false,
+                        timer: 2000
+                    })
+                }, 1000);
+
+            })
+            .catch(error => {
+                console.error('Error al obtener el archivo de texto:', error);
+            })
+    }
+})
 //FUNCIONALIDAD DE MOSTRAR LAS OPCIONES
 document.getElementById("cardBtn").addEventListener("click", () => {
     document.getElementById("container").classList.toggle("change")
@@ -70,7 +119,7 @@ document.getElementById("opcionA").addEventListener('click', () => {
     puntos++
     number.textContent = puntos
     document.getElementById("opcionA").style.background = "rgb(0, 255, 0)"
-    setTimeout(() => {        
+    setTimeout(() => {
         document.getElementById("container").classList.toggle("change")
     }, 900);
 
@@ -86,14 +135,14 @@ document.getElementById("opcionA").addEventListener('click', () => {
     setTimeout(() => {
         pregunta2()
     }, 4500);
-   
+
 })
 
 // RESPUESAT INCORRECTA (B)
 
 document.getElementById("opcionB").addEventListener('click', () => {
     document.getElementById("opcionB").style.background = "red"
-    setTimeout(() => {        
+    setTimeout(() => {
         document.getElementById("container").classList.toggle("change")
     }, 900);
 
@@ -109,7 +158,7 @@ document.getElementById("opcionB").addEventListener('click', () => {
     setTimeout(() => {
         pregunta2()
     }, 4500);
-   
+
 })
 
 
@@ -117,7 +166,7 @@ document.getElementById("opcionB").addEventListener('click', () => {
 
 document.getElementById("opcionC").addEventListener('click', () => {
     document.getElementById("opcionC").style.background = "red"
-    setTimeout(() => {        
+    setTimeout(() => {
         document.getElementById("container").classList.toggle("change")
     }, 900);
 
@@ -133,7 +182,7 @@ document.getElementById("opcionC").addEventListener('click', () => {
     setTimeout(() => {
         pregunta2()
     }, 4500);
-   
+
 })
 
 
@@ -155,7 +204,7 @@ document.getElementById("cardBtn2").addEventListener("click", () => {
 // RESPUESTA INCORRECTA (A)
 document.getElementById("opcionA2").addEventListener('click', () => {
     document.getElementById("opcionA2").style.background = "red"
-    setTimeout(() => {        
+    setTimeout(() => {
         document.getElementById("container").classList.toggle("change")
     }, 900);
 
@@ -171,14 +220,14 @@ document.getElementById("opcionA2").addEventListener('click', () => {
     setTimeout(() => {
         pregunta3()
     }, 4500);
-   
+
 })
 
 // RESPUESAT INCORRECTA (B)
 
 document.getElementById("opcionB2").addEventListener('click', () => {
     document.getElementById("opcionB2").style.background = "red"
-    setTimeout(() => {        
+    setTimeout(() => {
         document.getElementById("container").classList.toggle("change")
     }, 900);
 
@@ -194,7 +243,7 @@ document.getElementById("opcionB2").addEventListener('click', () => {
     setTimeout(() => {
         pregunta3()
     }, 4500);
-   
+
 })
 
 
@@ -204,7 +253,7 @@ document.getElementById("opcionC2").addEventListener('click', () => {
     puntos++
     number.textContent = puntos
     document.getElementById("opcionC2").style.background = "rgb(0, 255, 0)"
-    setTimeout(() => {        
+    setTimeout(() => {
         document.getElementById("container").classList.toggle("change")
     }, 900);
 
@@ -220,7 +269,7 @@ document.getElementById("opcionC2").addEventListener('click', () => {
     setTimeout(() => {
         pregunta3()
     }, 4500);
-   
+
 })
 
 
@@ -241,7 +290,7 @@ document.getElementById("cardBtn3").addEventListener("click", () => {
 // RESPUESTA INCORRECTA (A)
 document.getElementById("opcionA3").addEventListener('click', () => {
     document.getElementById("opcionA3").style.background = "red"
-    setTimeout(() => {        
+    setTimeout(() => {
         document.getElementById("container").classList.toggle("change")
     }, 900);
 
@@ -257,14 +306,14 @@ document.getElementById("opcionA3").addEventListener('click', () => {
     setTimeout(() => {
         pregunta4()
     }, 4500);
-   
+
 })
 
 // RESPUESAT INCORRECTA (B)
 
 document.getElementById("opcionB3").addEventListener('click', () => {
     document.getElementById("opcionB3").style.background = "red"
-    setTimeout(() => {        
+    setTimeout(() => {
         document.getElementById("container").classList.toggle("change")
     }, 900);
 
@@ -280,7 +329,7 @@ document.getElementById("opcionB3").addEventListener('click', () => {
     setTimeout(() => {
         pregunta4()
     }, 4500);
-   
+
 })
 
 
@@ -290,7 +339,7 @@ document.getElementById("opcionC3").addEventListener('click', () => {
     puntos++
     number.textContent = puntos
     document.getElementById("opcionC3").style.background = "rgb(0, 255, 0)"
-    setTimeout(() => {        
+    setTimeout(() => {
         document.getElementById("container").classList.toggle("change")
     }, 900);
 
@@ -306,7 +355,7 @@ document.getElementById("opcionC3").addEventListener('click', () => {
     setTimeout(() => {
         pregunta4()
     }, 4500);
-   
+
 })
 
 
@@ -327,7 +376,7 @@ document.getElementById("cardBtn4").addEventListener("click", () => {
 // RESPUESTA INCORRECTA (A)
 document.getElementById("opcionA4").addEventListener('click', () => {
     document.getElementById("opcionA4").style.background = "red"
-    setTimeout(() => {        
+    setTimeout(() => {
         document.getElementById("container").classList.toggle("change")
     }, 900);
 
@@ -343,7 +392,7 @@ document.getElementById("opcionA4").addEventListener('click', () => {
     setTimeout(() => {
         pregunta5()
     }, 4500);
-   
+
 })
 
 // RESPUESAT CORRECTA (B)
@@ -352,7 +401,7 @@ document.getElementById("opcionB4").addEventListener('click', () => {
     puntos++
     number.textContent = puntos
     document.getElementById("opcionB4").style.background = "rgb(0, 255, 0)"
-    setTimeout(() => {        
+    setTimeout(() => {
         document.getElementById("container").classList.toggle("change")
     }, 900);
 
@@ -368,7 +417,7 @@ document.getElementById("opcionB4").addEventListener('click', () => {
     setTimeout(() => {
         pregunta5()
     }, 4500);
-   
+
 })
 
 
@@ -376,7 +425,7 @@ document.getElementById("opcionB4").addEventListener('click', () => {
 
 document.getElementById("opcionC4").addEventListener('click', () => {
     document.getElementById("opcionC4").style.background = "red"
-    setTimeout(() => {        
+    setTimeout(() => {
         document.getElementById("container").classList.toggle("change")
     }, 900);
 
@@ -392,7 +441,7 @@ document.getElementById("opcionC4").addEventListener('click', () => {
     setTimeout(() => {
         pregunta5()
     }, 4500);
-   
+
 })
 
 
@@ -416,7 +465,7 @@ document.getElementById("opcionA5").addEventListener('click', () => {
     number.textContent = puntos
     console.log(puntos);
     document.getElementById("opcionA5").style.background = "rgb(0, 255, 0)"
-    setTimeout(() => {        
+    setTimeout(() => {
         document.getElementById("container").classList.toggle("change")
     }, 900);
 
@@ -432,14 +481,14 @@ document.getElementById("opcionA5").addEventListener('click', () => {
     setTimeout(() => {
         pregunta6()
     }, 4500);
-   
+
 })
 
 // RESPUESAT INCORRECTA (B)
 
 document.getElementById("opcionB5").addEventListener('click', () => {
     document.getElementById("opcionB5").style.background = "red"
-    setTimeout(() => {        
+    setTimeout(() => {
         document.getElementById("container").classList.toggle("change")
     }, 900);
 
@@ -455,7 +504,7 @@ document.getElementById("opcionB5").addEventListener('click', () => {
     setTimeout(() => {
         pregunta6()
     }, 4500);
-   
+
 })
 
 
@@ -463,7 +512,7 @@ document.getElementById("opcionB5").addEventListener('click', () => {
 
 document.getElementById("opcionC5").addEventListener('click', () => {
     document.getElementById("opcionC5").style.background = "red"
-    setTimeout(() => {        
+    setTimeout(() => {
         document.getElementById("container").classList.toggle("change")
     }, 900);
 
@@ -479,7 +528,7 @@ document.getElementById("opcionC5").addEventListener('click', () => {
     setTimeout(() => {
         pregunta6()
     }, 4500);
-   
+
 })
 
 
@@ -502,7 +551,7 @@ document.getElementById("cardBtn6").addEventListener("click", () => {
 // RESPUESTA INCORRECTA (A)
 document.getElementById("opcionA6").addEventListener('click', () => {
     document.getElementById("opcionA6").style.background = "red"
-    setTimeout(() => {        
+    setTimeout(() => {
         document.getElementById("container").classList.toggle("change")
     }, 900);
 
@@ -518,14 +567,14 @@ document.getElementById("opcionA6").addEventListener('click', () => {
     setTimeout(() => {
         pregunta7()
     }, 4500);
-   
+
 })
 
 // RESPUESAT INCORRECTA (B)
 
 document.getElementById("opcionB6").addEventListener('click', () => {
     document.getElementById("opcionB6").style.background = "red"
-    setTimeout(() => {        
+    setTimeout(() => {
         document.getElementById("container").classList.toggle("change")
     }, 900);
 
@@ -541,7 +590,7 @@ document.getElementById("opcionB6").addEventListener('click', () => {
     setTimeout(() => {
         pregunta7()
     }, 4500);
-   
+
 })
 
 
@@ -551,7 +600,7 @@ document.getElementById("opcionC6").addEventListener('click', () => {
     puntos++
     number.textContent = puntos
     document.getElementById("opcionC6").style.background = "rgb(0, 255, 0)"
-    setTimeout(() => {        
+    setTimeout(() => {
         document.getElementById("container").classList.toggle("change")
     }, 900);
 
@@ -567,7 +616,7 @@ document.getElementById("opcionC6").addEventListener('click', () => {
     setTimeout(() => {
         pregunta7()
     }, 4500);
-   
+
 })
 
 
@@ -590,7 +639,7 @@ document.getElementById("cardBtn7").addEventListener("click", () => {
 // RESPUESTA INCORRECTA (A)
 document.getElementById("opcionA7").addEventListener('click', () => {
     document.getElementById("opcionA7").style.background = "red"
-    setTimeout(() => {        
+    setTimeout(() => {
         document.getElementById("container").classList.toggle("change")
     }, 900);
 
@@ -606,14 +655,14 @@ document.getElementById("opcionA7").addEventListener('click', () => {
     setTimeout(() => {
         pregunta8()
     }, 4500);
-   
+
 })
 
 // RESPUESAT INCORRECTA (B)
 
 document.getElementById("opcionB7").addEventListener('click', () => {
     document.getElementById("opcionB7").style.background = "red"
-    setTimeout(() => {        
+    setTimeout(() => {
         document.getElementById("container").classList.toggle("change")
     }, 900);
 
@@ -629,7 +678,7 @@ document.getElementById("opcionB7").addEventListener('click', () => {
     setTimeout(() => {
         pregunta8()
     }, 4500);
-   
+
 })
 
 
@@ -639,7 +688,7 @@ document.getElementById("opcionC7").addEventListener('click', () => {
     puntos++
     number.textContent = puntos
     document.getElementById("opcionC7").style.background = "rgb(0, 255, 0)"
-    setTimeout(() => {        
+    setTimeout(() => {
         document.getElementById("container").classList.toggle("change")
     }, 900);
 
@@ -655,7 +704,7 @@ document.getElementById("opcionC7").addEventListener('click', () => {
     setTimeout(() => {
         pregunta8()
     }, 4500);
-   
+
 })
 
 
@@ -676,7 +725,7 @@ document.getElementById("cardBtn8").addEventListener("click", () => {
 // RESPUESTA INCORRECTA (A)
 document.getElementById("opcionA8").addEventListener('click', () => {
     document.getElementById("opcionA8").style.background = "red"
-    setTimeout(() => {        
+    setTimeout(() => {
         document.getElementById("container").classList.toggle("change")
     }, 900);
 
@@ -692,7 +741,7 @@ document.getElementById("opcionA8").addEventListener('click', () => {
     setTimeout(() => {
         pregunta9()
     }, 4500);
-   
+
 })
 
 // RESPUESAT CORRECTA (B)
@@ -701,7 +750,7 @@ document.getElementById("opcionB8").addEventListener('click', () => {
     puntos++
     number.textContent = puntos
     document.getElementById("opcionB8").style.background = "rgb(0, 255, 0)"
-    setTimeout(() => {        
+    setTimeout(() => {
         document.getElementById("container").classList.toggle("change")
     }, 900);
 
@@ -717,7 +766,7 @@ document.getElementById("opcionB8").addEventListener('click', () => {
     setTimeout(() => {
         pregunta9()
     }, 4500);
-   
+
 })
 
 
@@ -725,7 +774,7 @@ document.getElementById("opcionB8").addEventListener('click', () => {
 
 document.getElementById("opcionC8").addEventListener('click', () => {
     document.getElementById("opcionC8").style.background = "red"
-    setTimeout(() => {        
+    setTimeout(() => {
         document.getElementById("container").classList.toggle("change")
     }, 900);
 
@@ -741,7 +790,7 @@ document.getElementById("opcionC8").addEventListener('click', () => {
     setTimeout(() => {
         pregunta9()
     }, 4500);
-   
+
 })
 
 
@@ -762,7 +811,7 @@ document.getElementById("cardBtn9").addEventListener("click", () => {
 // RESPUESTA INCORRECTA (A)
 document.getElementById("opcionA9").addEventListener('click', () => {
     document.getElementById("opcionA9").style.background = "red"
-    setTimeout(() => {        
+    setTimeout(() => {
         document.getElementById("container").classList.toggle("change")
     }, 900);
 
@@ -778,14 +827,14 @@ document.getElementById("opcionA9").addEventListener('click', () => {
     setTimeout(() => {
         pregunta10()
     }, 4500);
-   
+
 })
 
 // RESPUESAT INCORRECTA (B)
 
 document.getElementById("opcionB9").addEventListener('click', () => {
     document.getElementById("opcionB9").style.background = "red"
-    setTimeout(() => {        
+    setTimeout(() => {
         document.getElementById("container").classList.toggle("change")
     }, 900);
 
@@ -801,7 +850,7 @@ document.getElementById("opcionB9").addEventListener('click', () => {
     setTimeout(() => {
         pregunta10()
     }, 4500);
-   
+
 })
 
 
@@ -811,7 +860,7 @@ document.getElementById("opcionC9").addEventListener('click', () => {
     puntos++
     number.textContent = puntos
     document.getElementById("opcionC9").style.background = "rgb(0, 255, 0)"
-    setTimeout(() => {        
+    setTimeout(() => {
         document.getElementById("container").classList.toggle("change")
     }, 900);
 
@@ -827,7 +876,7 @@ document.getElementById("opcionC9").addEventListener('click', () => {
     setTimeout(() => {
         pregunta10()
     }, 4500);
-   
+
 })
 
 
@@ -848,7 +897,7 @@ document.getElementById("cardBtn10").addEventListener("click", () => {
 // RESPUESTA INCORRECTA (A)
 document.getElementById("opcionA10").addEventListener('click', () => {
     document.getElementById("opcionA10").style.background = "red"
-    setTimeout(() => {        
+    setTimeout(() => {
         document.getElementById("container").classList.toggle("change")
     }, 900);
 
@@ -864,18 +913,18 @@ document.getElementById("opcionA10").addEventListener('click', () => {
     setTimeout(() => {
         if (puntos >= 6) {
             window.location.assign("/fireworks/winner.html")
-        }else{
+        } else {
             window.location.assign("/pages/loserPlayer.html")
         }
     }, 4500);
-   
+
 })
 
 // RESPUESAT INCORRECTA (B)
 
 document.getElementById("opcionB10").addEventListener('click', () => {
     document.getElementById("opcionB10").style.background = "red"
-    setTimeout(() => {        
+    setTimeout(() => {
         document.getElementById("container").classList.toggle("change")
     }, 900);
 
@@ -891,11 +940,11 @@ document.getElementById("opcionB10").addEventListener('click', () => {
     setTimeout(() => {
         if (puntos >= 6) {
             window.location.assign("/fireworks/winner.html")
-        }else{
+        } else {
             window.location.assign("/pages/loserPlayer.html")
         }
     }, 4500);
-   
+
 })
 
 
@@ -905,7 +954,7 @@ document.getElementById("opcionC10").addEventListener('click', () => {
     puntos++
     number.textContent = puntos
     document.getElementById("opcionC10").style.background = "rgb(0, 255, 0)"
-    setTimeout(() => {        
+    setTimeout(() => {
         document.getElementById("container").classList.toggle("change")
     }, 900);
 
@@ -922,13 +971,13 @@ document.getElementById("opcionC10").addEventListener('click', () => {
         if (puntos >= 6 && puntos < 10) {
             window.location.assign("/fireworks/winner.html")
         }
-        else if(puntos == 10) {
+        else if (puntos == 10) {
             window.location.assign("/pages/perfectScore.html")
         }
-        else{
+        else {
             window.location.assign("/pages/loserPlayer.html")
         }
     }, 4500);
-   
+
 })
 
