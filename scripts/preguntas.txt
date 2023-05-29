@@ -1,4 +1,79 @@
-1.quien descubrio colombia
-tu papa
-tu primo
-tu hermano
+-El campo de abajo es para la pregunta 1
+
+-El campo de abajo es para la opcion de respuesta a {correcta}
+
+-El campo de abajo es para la opcion de respuesta b
+
+-El campo de abajo es para la opcion de respuesta c
+
+-El campo de abajo es para la pregunta 2
+
+-El campo de abajo es para la opcion de respuesta a
+
+-El campo de abajo es para la opcion de respuesta b
+
+-El campo de abajo es para la opcion de respuesta c {correcta}
+
+-El campo de abajo es para la pregunta 3
+
+-El campo de abajo es para la opcion de respuesta a
+
+-El campo de abajo es para la opcion de respuesta b
+
+-El campo de abajo es para la opcion de respuesta c {correcta}
+
+-El campo de abajo es para la pregunta 4
+
+-El campo de abajo es para la opcion de respuesta a
+
+-El campo de abajo es para la opcion de respuesta b {correcta}
+
+-El campo de abajo es para la opcion de respuesta c
+
+-El campo de abajo es para la pregunta 5
+
+-El campo de abajo es para la opcion de respuesta a {correcta}
+
+-El campo de abajo es para la opcion de respuesta b
+
+-El campo de abajo es para la opcion de respuesta c
+
+-El campo de abajo es para la pregunta 6
+
+-El campo de abajo es para la opcion de respuesta a
+
+-El campo de abajo es para la opcion de respuesta b
+
+-El campo de abajo es para la opcion de respuesta c {correcta}
+
+-El campo de abajo es para la pregunta 7
+
+-El campo de abajo es para la opcion de respuesta a
+
+-El campo de abajo es para la opcion de respuesta b
+
+-El campo de abajo es para la opcion de respuesta c {correcta}
+
+-El campo de abajo es para la pregunta 8
+
+-El campo de abajo es para la opcion de respuesta a
+
+-El campo de abajo es para la opcion de respuesta b {correcta}
+
+-El campo de abajo es para la opcion de respuesta c
+
+-El campo de abajo es para la pregunta 9
+
+-El campo de abajo es para la opcion de respuesta a
+
+-El campo de abajo es para la opcion de respuesta b
+
+-El campo de abajo es para la opcion de respuesta c {correcta}
+
+-El campo de abajo es para la pregunta 10
+
+-El campo de abajo es para la opcion de respuesta a
+
+-El campo de abajo es para la opcion de respuesta b
+
+-El campo de abajo es para la opcion de respuesta c {correcta}
