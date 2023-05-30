@@ -252,3 +252,73 @@ html {
   margin-top: 20px;
   margin-right: 15px;
 }
+
+
+/* formulario de confirmacion de actualizacion de datos */
+
+.formAddhidden {
+  /* visibility: hidden; */
+  display: none;
+  z-index: 0;
+}
+
+.formAddquestion {
+  border-radius: 10px;
+  position: absolute;
+  transform: translate(440px, 150px);
+  /* top: 25%;
+  left: 30%; */
+  z-index: 100;
+  width: 48rem;
+  height: 30rem;
+  background-color: white;
+  z-index: 1000;
+}
+.formAddquestion .bannerCoffe {
+  width: 100%;
+  height: 4.5rem;
+  border-radius: 10px 10px 0 0;
+  background-color: #43b141;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white; 
+  gap: 50px;
+}
+.bannerCoffe span {
+  margin-right: -50px;
+  cursor: pointer;
+}
+.formAddquestion .contInfoBox {
+  width: 100%;
+  height: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+.contInfoBox label{
+  text-transform: uppercase;
+}
+.contInfoBox label input {
+  width: 200px;
+  height: 25px;
+  border-radius: 15px;
+  border: solid 1px black;
+  padding-left: 5px;
+}
+.contInfoBox button{
+  width: 130px;
+  height: 40px;
+  border: none;
+  background-color: #43b141;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: .2s;
+}
+.contInfoBox button:hover {
+  background-color: lime;
+}

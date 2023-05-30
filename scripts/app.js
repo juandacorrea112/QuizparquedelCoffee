@@ -56,8 +56,14 @@ const confirmModal = document.getElementById('confirmModal')
 let inputName = document.getElementById('inputName')
 let inputPassword = document.getElementById('inputPassword')
 
-/*prueba*/
+/*----------------------PREGUNTAS------------------*/
 let pregunta1 = document.getElementById('pregunta1')
+
+
+/*----------------------OPCIONES-------------------*/
+let respuestaA1 = document.getElementById('respuestaA1')
+let respuestaB1 = document.getElementById('respuestaB1')
+let respuestaC1 = document.getElementById('respuestaC1')
 
 document.addEventListener('keyup', function (event) {
     // Verifica si la tecla presionada es "Enter" (código 13)
@@ -85,10 +91,19 @@ confirmModal.addEventListener('click', () => {
             .then(data => {
                 // Divide el contenido en párrafos
                 const preguntas = data.split('\n')
-                // pregunta1.textContent = preguntas[0]
-                // pruebadecambio.textContent = preguntas[0]
-                console.log(preguntas);
+                pregunta1.textContent = preguntas[0]
+                respuestaA1.textContent = preguntas[1]
+                respuestaB1.textContent = preguntas[2]
+                respuestaC1.textContent = preguntas[3]
 
+                // pruebadecambio.textContent = preguntas[0]
+                console.log(preguntas[0]);
+
+                //guardar el valor en la cookie
+                document.cookie = "Pregunta1=" + encodeURIComponent(pregunta1.innerHTML)
+                document.cookie = "RespuestaA1=" + encodeURIComponent(respuestaA1.innerHTML)
+                document.cookie = "RespuestaB1=" + encodeURIComponent(respuestaB1.innerHTML)
+                document.cookie = "RespuestaC1=" + encodeURIComponent(respuestaC1.innerHTML)
 
                 // parrafdes2015.textContent = parrafos[3]
 
@@ -108,6 +123,33 @@ confirmModal.addEventListener('click', () => {
             })
     }
 })
+
+// Función para leer el valor de una cookie por su nombre
+function getCookie(nombre) {
+    var cookieName = nombre + "=";
+    var cookies = document.cookie.split(";");
+  
+    for (var i = 0; i < cookies.length; i++) {
+      var cookie = cookies[i].trim();
+  
+      if (cookie.indexOf(cookieName) === 0) {
+        return decodeURIComponent(cookie.substring(cookieName.length, cookie.length));
+      }
+    }
+  
+    return null;
+  }
+
+  // Cuando la página se carga, verifica si hay una cookie para el contenido del h1 y actualiza su valor si es necesario
+  window.onload = function() {
+    let pregunta1 = document.getElementById('pregunta1')
+    let pregunta1Cont = getCookie("Pregunta1")
+
+    if (pregunta1Cont) {
+        pregunta1.innerHTML = pregunta1Cont
+    }
+  }
+
 //FUNCIONALIDAD DE MOSTRAR LAS OPCIONES
 document.getElementById("cardBtn").addEventListener("click", () => {
     document.getElementById("container").classList.toggle("change")
