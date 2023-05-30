@@ -61,6 +61,12 @@ let pregunta1 = document.getElementById('pregunta1')
 let Sgpregunta = document.getElementById('Sgpregunta')
 let terpregunta = document.getElementById('terpregunta')
 let cuarpregunta = document.getElementById('cuarpregunta')
+let quinpregunta = document.getElementById('quinpregunta')
+let sextpregunta = document.getElementById('sextpregunta')
+let septmpregunta = document.getElementById('septmpregunta')
+let octavpregunta = document.getElementById('octavpregunta')
+let novenpregunta = document.getElementById('novenpregunta')
+let decimpregunta = document.getElementById('decimpregunta')
 /*-------------------------------------------------*/
 
 /*----------------------OPCIONES-------------------*/
@@ -79,6 +85,30 @@ let respuestaC3 = document.getElementById('respuestaC3')
 let respuestaA4 = document.getElementById('respuestaA4')
 let respuestaB4 = document.getElementById('respuestaB4')
 let respuestaC4 = document.getElementById('respuestaC4')
+
+let respuestaA5 = document.getElementById('respuestaA5')
+let respuestaB5 = document.getElementById('respuestaB5')
+let respuestaC5 = document.getElementById('respuestaC5')
+
+let respuestaA6 = document.getElementById('respuestaA6')
+let respuestaB6 = document.getElementById('respuestaB6')
+let respuestaC6 = document.getElementById('respuestaC6')
+
+let respuestaA7 = document.getElementById('respuestaA7')
+let respuestaB7 = document.getElementById('respuestaB7')
+let respuestaC7 = document.getElementById('respuestaC7')
+
+let respuestaA8 = document.getElementById('respuestaA8')
+let respuestaB8 = document.getElementById('respuestaB8')
+let respuestaC8 = document.getElementById('respuestaC8')
+
+let respuestaA9 = document.getElementById('respuestaA9')
+let respuestaB9 = document.getElementById('respuestaB9')
+let respuestaC9 = document.getElementById('respuestaC9')
+
+let respuestaA10 = document.getElementById('respuestaA10')
+let respuestaB10 = document.getElementById('respuestaB10')
+let respuestaC10 = document.getElementById('respuestaC10')
 /*-------------------------------------------------*/
 document.addEventListener('keyup', function (event) {
     // Verifica si la tecla presionada es "Enter" (código 13)
@@ -106,13 +136,99 @@ confirmModal.addEventListener('click', () => {
             .then(data => {
                 // Divide el contenido en párrafos
                 const preguntas = data.split('\n')
-                pregunta1.textContent = preguntas[0]
+                pregunta1.textContent = preguntas[1]
+                respuestaA1.textContent = preguntas[3]
+                respuestaB1.textContent = preguntas[5]
+                respuestaC1.textContent = preguntas[7]
+
+                Sgpregunta.textContent = preguntas[9]
+                respuestaA2.textContent = preguntas[11]
+                respuestaB2.textContent = preguntas[13]
+                respuestaC2.textContent = preguntas[15]
+
+                terpregunta.textContent = preguntas[17]
+                respuestaA3.textContent = preguntas[19]
+                respuestaB3.textContent = preguntas[21]
+                respuestaC3.textContent = preguntas[23]
+
+                cuarpregunta.textContent = preguntas[25]
+                respuestaA4.textContent = preguntas[27]
+                respuestaB4.textContent = preguntas[29]
+                respuestaC4.textContent = preguntas[31]
+
+                quinpregunta.textContent = preguntas[33]
+                respuestaA5.textContent = preguntas[35]
+                respuestaB5.textContent = preguntas[37]
+                respuestaC5.textContent = preguntas[39]
+
+                sextpregunta.textContent = preguntas[41]
+                respuestaA6.textContent = preguntas[43]
+                respuestaB6.textContent = preguntas[45]
+                respuestaC6.textContent = preguntas[47]
+
+                septmpregunta.textContent = preguntas[49]
+                respuestaA7.textContent = preguntas[51]
+                respuestaB7.textContent = preguntas[53]
+                respuestaC7.textContent = preguntas[55]
+
+                octavpregunta.textContent = preguntas[57]
+                respuestaA8.textContent = preguntas[59]
+                respuestaB8.textContent = preguntas[61]
+                respuestaC8.textContent = preguntas[63]
+
+                novenpregunta.textContent = preguntas[65]
+                respuestaA9.textContent = preguntas[67]
+                respuestaB9.textContent = preguntas[69]
+                respuestaC9.textContent = preguntas[71]
+
+                decimpregunta.textContent = preguntas[73]
+                respuestaA10.textContent = preguntas[75]
+                respuestaB10.textContent = preguntas[77]
+                respuestaC10.textContent = preguntas[79]
                 // pruebadecambio.textContent = preguntas[0]
                 console.log(preguntas[0]);
 
                 //guardar el valor en la cookie
                 document.cookie = "Pregunta1=" + encodeURIComponent(pregunta1.innerHTML)
-
+                document.cookie = "respuestaA1=" + encodeURIComponent(respuestaA1.innerHTML)
+                document.cookie = "respuestaB1=" + encodeURIComponent(respuestaB1.innerHTML)
+                document.cookie = "respuestaC1=" + encodeURIComponent(respuestaC1.innerHTML)
+                document.cookie = "Sgpregunta=" + encodeURIComponent(Sgpregunta.innerHTML)
+                document.cookie = "respuestaA2=" + encodeURIComponent(respuestaA2.innerHTML)
+                document.cookie = "respuestaB2=" + encodeURIComponent(respuestaB2.innerHTML)
+                document.cookie = "respuestaC2=" + encodeURIComponent(respuestaC2.innerHTML)
+                document.cookie = "terpregunta=" + encodeURIComponent(terpregunta.innerHTML)
+                document.cookie = "respuestaA3=" + encodeURIComponent(respuestaA3.innerHTML)
+                document.cookie = "respuestaB3=" + encodeURIComponent(respuestaB3.innerHTML)
+                document.cookie = "respuestaC3=" + encodeURIComponent(respuestaC3.innerHTML)
+                document.cookie = "cuarpregunta=" + encodeURIComponent(cuarpregunta.innerHTML)
+                document.cookie = "respuestaA4=" + encodeURIComponent(respuestaA4.innerHTML)
+                document.cookie = "respuestaB4=" + encodeURIComponent(respuestaB4.innerHTML)
+                document.cookie = "respuestaC4=" + encodeURIComponent(respuestaC4.innerHTML)
+                document.cookie = "quinpregunta=" + encodeURIComponent(quinpregunta.innerHTML)
+                document.cookie = "respuestaA5=" + encodeURIComponent(respuestaA5.innerHTML)
+                document.cookie = "respuestaB5=" + encodeURIComponent(respuestaB5.innerHTML)
+                document.cookie = "respuestaC5=" + encodeURIComponent(respuestaC5.innerHTML)
+                document.cookie = "sextpregunta=" + encodeURIComponent(sextpregunta.innerHTML)
+                document.cookie = "respuestaA6=" + encodeURIComponent(respuestaA6.innerHTML)
+                document.cookie = "respuestaB6=" + encodeURIComponent(respuestaB6.innerHTML)
+                document.cookie = "respuestaC6=" + encodeURIComponent(respuestaC6.innerHTML)
+                document.cookie = "septmpregunta=" + encodeURIComponent(septmpregunta.innerHTML)
+                document.cookie = "respuestaA7=" + encodeURIComponent(respuestaA7.innerHTML)
+                document.cookie = "respuestaB7=" + encodeURIComponent(respuestaB7.innerHTML)
+                document.cookie = "respuestaC7=" + encodeURIComponent(respuestaC7.innerHTML)
+                document.cookie = "octavpregunta=" + encodeURIComponent(octavpregunta.innerHTML)
+                document.cookie = "respuestaA8=" + encodeURIComponent(respuestaA8.innerHTML)
+                document.cookie = "respuestaB8=" + encodeURIComponent(respuestaB8.innerHTML)
+                document.cookie = "respuestaC8=" + encodeURIComponent(respuestaC8.innerHTML)
+                document.cookie = "novenpregunta=" + encodeURIComponent(novenpregunta.innerHTML)
+                document.cookie = "respuestaA9=" + encodeURIComponent(respuestaA9.innerHTML)
+                document.cookie = "respuestaB9=" + encodeURIComponent(respuestaB9.innerHTML)
+                document.cookie = "respuestaC9=" + encodeURIComponent(respuestaC9.innerHTML)
+                document.cookie = "decimpregunta=" + encodeURIComponent(decimpregunta.innerHTML)
+                document.cookie = "respuestaA10=" + encodeURIComponent(respuestaA10.innerHTML)
+                document.cookie = "respuestaB10=" + encodeURIComponent(respuestaB10.innerHTML)
+                document.cookie = "respuestaC10=" + encodeURIComponent(respuestaC10.innerHTML)
 
                 // parrafdes2015.textContent = parrafos[3]
 
@@ -151,12 +267,208 @@ function getCookie(nombre) {
 
   // Cuando la página se carga, verifica si hay una cookie para el contenido del h1 y actualiza su valor si es necesario
   window.onload = function() {
-    let pregunta1 = document.getElementById('pregunta1')
     let pregunta1Cont = getCookie("Pregunta1")
+    let pregunta1ContA1 = getCookie("respuestaA1")
+    let pregunta1ContB1 = getCookie("respuestaB1")
+    let pregunta1ContC1 = getCookie("respuestaC1")
+    let pregunta1Cont2 = getCookie("Sgpregunta")
+    let pregunta1ContA2 = getCookie("respuestaA2")
+    let pregunta1ContB2 = getCookie("respuestaB2")
+    let pregunta1ContC2 = getCookie("respuestaC2")
+    let pregunta1Cont3= getCookie("terpregunta")
+    let pregunta1ContA3 = getCookie("respuestaA3")
+    let pregunta1ContB3 = getCookie("respuestaB3")
+    let pregunta1ContC3 = getCookie("respuestaC3")
+    let pregunta1Cont4 = getCookie("cuarpregunta")
+    let pregunta1ContA4 = getCookie("respuestaA4")
+    let pregunta1ContB4 = getCookie("respuestaB4")
+    let pregunta1ContC4 = getCookie("respuestaC4")
+    let pregunta1Cont5 = getCookie("quinpregunta")
+    let pregunta1ContA5 = getCookie("respuestaA5")
+    let pregunta1ContB5 = getCookie("respuestaB5")
+    let pregunta1ContC5 = getCookie("respuestaC5")
+    let pregunta1Cont6 = getCookie("sextpregunta")
+    let pregunta1ContA6 = getCookie("respuestaA6")
+    let pregunta1ContB6 = getCookie("respuestaB6")
+    let pregunta1ContC6 = getCookie("respuestaC6")
+    let pregunta1Cont7 = getCookie("septmpregunta")
+    let pregunta1ContA7 = getCookie("respuestaA7")
+    let pregunta1ContB7 = getCookie("respuestaB7")
+    let pregunta1ContC7 = getCookie("respuestaC7")
+    let pregunta1Cont8 = getCookie("octavpregunta")
+    let pregunta1ContA8 = getCookie("respuestaA8")
+    let pregunta1ContB8 = getCookie("respuestaB8")
+    let pregunta1ContC8 = getCookie("respuestaC8")
+    let pregunta1Cont9 = getCookie("novenpregunta")
+    let pregunta1ContA9 = getCookie("respuestaA9")
+    let pregunta1ContB9 = getCookie("respuestaB9")
+    let pregunta1ContC9 = getCookie("respuestaC9")
+    let pregunta1Cont10 = getCookie("decimpregunta")
+    let pregunta1ContA10 = getCookie("respuestaA10")
+    let pregunta1ContB10 = getCookie("respuestaB10")
+    let pregunta1ContC10 = getCookie("respuestaC10")
+
 
     if (pregunta1Cont) {
         pregunta1.innerHTML = pregunta1Cont
     }
+
+    if (pregunta1ContA1) {
+        respuestaA1.innerHTML = pregunta1ContA1
+    }
+
+    if (pregunta1ContB1) {
+        respuestaB1.innerHTML = pregunta1ContB1
+    }
+
+    if (pregunta1ContC1) {
+        respuestaC1.innerHTML = pregunta1ContC1
+    }
+
+    if (pregunta1Cont2) {
+        Sgpregunta.innerHTML = pregunta1Cont2
+    }
+
+    if (pregunta1ContA2) {
+        respuestaA2.innerHTML = pregunta1ContA2
+    }
+
+    if (pregunta1ContB2) {
+        respuestaB2.innerHTML = pregunta1ContB2
+    }
+
+    if (pregunta1ContC2) {
+        respuestaC2.innerHTML = pregunta1ContC2
+    }
+
+    if (pregunta1Cont3) {
+        terpregunta.innerHTML = pregunta1Cont3
+    }
+
+    if (pregunta1ContA3) {
+        respuestaA3.innerHTML = pregunta1ContA3
+    }
+
+    if (pregunta1ContB3) {
+        respuestaB3.innerHTML = pregunta1ContB3
+    }
+
+    if (pregunta1ContC3) {
+        respuestaC3.innerHTML = pregunta1ContC3
+    }
+
+    if (pregunta1Cont4) {
+        cuarpregunta.innerHTML = pregunta1Cont4
+    }
+
+    if (pregunta1ContA4) {
+        respuestaA4.innerHTML = pregunta1ContA4
+    }
+
+    if (pregunta1ContB4) {
+        respuestaB4.innerHTML = pregunta1ContB4
+    }
+
+    if (pregunta1ContC4) {
+        respuestaC4.innerHTML = pregunta1ContC4
+    }
+
+    if (pregunta1Cont5) {
+        quinpregunta.innerHTML = pregunta1Cont5
+    }
+
+    if (pregunta1ContA5) {
+        respuestaA5.innerHTML = pregunta1ContA5
+    }
+
+    if (pregunta1ContB5) {
+        respuestaB5.innerHTML = pregunta1ContB5
+    }
+
+    if (pregunta1ContC5) {
+        respuestaC5.innerHTML = pregunta1ContC5
+    }
+
+    if (pregunta1Cont6) {
+        sextpregunta.innerHTML = pregunta1Cont6
+    }
+
+    if (pregunta1ContA6) {
+        respuestaA6.innerHTML = pregunta1ContA6
+    }
+
+    if (pregunta1ContB6) {
+        respuestaB6.innerHTML = pregunta1ContB6
+    }
+
+    if (pregunta1ContC6) {
+        respuestaC6.innerHTML = pregunta1ContC6
+    }
+
+    if (pregunta1Cont7) {
+        septmpregunta.innerHTML = pregunta1Cont7
+    }
+
+    if (pregunta1ContA7) {
+        respuestaA7.innerHTML = pregunta1ContA7
+    }
+
+    if (pregunta1ContB7) {
+        respuestaB7.innerHTML = pregunta1ContB7
+    }
+
+    if (pregunta1ContC7) {
+        respuestaC7.innerHTML = pregunta1ContC7
+    }
+    
+    if (pregunta1Cont8) {
+        pregunta1.innerHTML = pregunta1Cont8
+    }
+
+    if (pregunta1ContA8) {
+        pregunta1.innerHTML = pregunta1ContA8
+    }
+
+    if (pregunta1ContB8) {
+        pregunta1.innerHTML = pregunta1ContB8
+    }
+
+    if (pregunta1ContC8) {
+        pregunta1.innerHTML = pregunta1ContC8
+    }
+
+    if (pregunta1Cont9) {
+        pregunta1.innerHTML = pregunta1Cont9
+    }
+
+    if (pregunta1ContA9) {
+        pregunta1.innerHTML = pregunta1ContA9
+    }
+
+    if (pregunta1ContB9) {
+        pregunta1.innerHTML = pregunta1ContB9
+    }
+
+    if (pregunta1ContC9) {
+        pregunta1.innerHTML = pregunta1ContC9
+    }
+
+    if (pregunta1Cont10) {
+        pregunta1.innerHTML = pregunta1Cont10
+    }
+
+    if (pregunta1ContA10) {
+        pregunta1.innerHTML = pregunta1ContA10
+    }
+
+    if (pregunta1ContB10) {
+        pregunta1.innerHTML = pregunta1ContB10
+    }
+
+    if (pregunta1ContC10) {
+        pregunta1.innerHTML = pregunta1ContC10
+    }
+
   }
 
 //FUNCIONALIDAD DE MOSTRAR LAS OPCIONES
