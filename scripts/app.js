@@ -58,13 +58,28 @@ let inputPassword = document.getElementById('inputPassword')
 
 /*----------------------PREGUNTAS------------------*/
 let pregunta1 = document.getElementById('pregunta1')
-
+let Sgpregunta = document.getElementById('Sgpregunta')
+let terpregunta = document.getElementById('terpregunta')
+let cuarpregunta = document.getElementById('cuarpregunta')
+/*-------------------------------------------------*/
 
 /*----------------------OPCIONES-------------------*/
 let respuestaA1 = document.getElementById('respuestaA1')
 let respuestaB1 = document.getElementById('respuestaB1')
 let respuestaC1 = document.getElementById('respuestaC1')
 
+let respuestaA2 = document.getElementById('respuestaA2')
+let respuestaB2 = document.getElementById('respuestaB2')
+let respuestaC2 = document.getElementById('respuestaC2')
+
+let respuestaA3 = document.getElementById('respuestaA3')
+let respuestaB3 = document.getElementById('respuestaB3')
+let respuestaC3 = document.getElementById('respuestaC3')
+
+let respuestaA4 = document.getElementById('respuestaA4')
+let respuestaB4 = document.getElementById('respuestaB4')
+let respuestaC4 = document.getElementById('respuestaC4')
+/*-------------------------------------------------*/
 document.addEventListener('keyup', function (event) {
     // Verifica si la tecla presionada es "Enter" (código 13)
     if (event.keyCode === 13) {
@@ -92,18 +107,12 @@ confirmModal.addEventListener('click', () => {
                 // Divide el contenido en párrafos
                 const preguntas = data.split('\n')
                 pregunta1.textContent = preguntas[0]
-                respuestaA1.textContent = preguntas[1]
-                respuestaB1.textContent = preguntas[2]
-                respuestaC1.textContent = preguntas[3]
-
                 // pruebadecambio.textContent = preguntas[0]
                 console.log(preguntas[0]);
 
                 //guardar el valor en la cookie
                 document.cookie = "Pregunta1=" + encodeURIComponent(pregunta1.innerHTML)
-                document.cookie = "RespuestaA1=" + encodeURIComponent(respuestaA1.innerHTML)
-                document.cookie = "RespuestaB1=" + encodeURIComponent(respuestaB1.innerHTML)
-                document.cookie = "RespuestaC1=" + encodeURIComponent(respuestaC1.innerHTML)
+
 
                 // parrafdes2015.textContent = parrafos[3]
 
