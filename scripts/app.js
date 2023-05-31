@@ -422,51 +422,51 @@ function getCookie(nombre) {
     }
     
     if (pregunta1Cont8) {
-        pregunta1.innerHTML = pregunta1Cont8
+        octavpregunta.innerHTML = pregunta1Cont8
     }
 
     if (pregunta1ContA8) {
-        pregunta1.innerHTML = pregunta1ContA8
+        respuestaA8.innerHTML = pregunta1ContA8
     }
 
     if (pregunta1ContB8) {
-        pregunta1.innerHTML = pregunta1ContB8
+        respuestaB8.innerHTML = pregunta1ContB8
     }
 
     if (pregunta1ContC8) {
-        pregunta1.innerHTML = pregunta1ContC8
+        respuestaC8.innerHTML = pregunta1ContC8
     }
 
     if (pregunta1Cont9) {
-        pregunta1.innerHTML = pregunta1Cont9
+        novenpregunta.innerHTML = pregunta1Cont9
     }
 
     if (pregunta1ContA9) {
-        pregunta1.innerHTML = pregunta1ContA9
+        respuestaA9.innerHTML = pregunta1ContA9
     }
 
     if (pregunta1ContB9) {
-        pregunta1.innerHTML = pregunta1ContB9
+        respuestaB9.innerHTML = pregunta1ContB9
     }
 
     if (pregunta1ContC9) {
-        pregunta1.innerHTML = pregunta1ContC9
+        respuestaC9.innerHTML = pregunta1ContC9
     }
 
     if (pregunta1Cont10) {
-        pregunta1.innerHTML = pregunta1Cont10
+        decimpregunta.innerHTML = pregunta1Cont10
     }
 
     if (pregunta1ContA10) {
-        pregunta1.innerHTML = pregunta1ContA10
+        respuestaA10.innerHTML = pregunta1ContA10
     }
 
     if (pregunta1ContB10) {
-        pregunta1.innerHTML = pregunta1ContB10
+        respuestaB10.innerHTML = pregunta1ContB10
     }
 
     if (pregunta1ContC10) {
-        pregunta1.innerHTML = pregunta1ContC10
+        respuestaC10.innerHTML = pregunta1ContC10
     }
 
   }
