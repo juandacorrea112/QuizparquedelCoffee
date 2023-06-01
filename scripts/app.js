@@ -1,5 +1,3 @@
-
-
 /*===========TIEMPO DE INNACTIVIDAD DEL USUARIO======*/
 const timeInnactivity = 10 * 6 * 1000
 let timeoutId;
@@ -41,11 +39,9 @@ window.addEventListener('load', () => {
     number.textContent = puntos
 })
 
-
 window.addEventListener('load', () => {
     formPut.classList.toggle('formAddhidden')
 })
-
 
 /* =========== activar formulario =========== */
 let user = 'juan david'
@@ -548,21 +544,17 @@ document.getElementById("opcionC").addEventListener('click', () => {
 
 })
 
-
-
 // PREGUNTA 2
 
 function pregunta2() {
     document.getElementById("card2").classList.toggle("card2Invisible")
 }
 
-
 //FUNCIONALIDAD DE MOSTRAR LAS OPCIONES
 
 document.getElementById("cardBtn2").addEventListener("click", () => {
     document.getElementById("container").classList.toggle("change")
 })
-
 
 // RESPUESTA INCORRECTA (A)
 document.getElementById("opcionA2").addEventListener('click', () => {
@@ -609,7 +601,6 @@ document.getElementById("opcionB2").addEventListener('click', () => {
 
 })
 
-
 // RESPUESAT CORRECTA (C)
 
 document.getElementById("opcionC2").addEventListener('click', () => {
@@ -635,7 +626,6 @@ document.getElementById("opcionC2").addEventListener('click', () => {
 
 })
 
-
 // PREGUNTA 3
 
 function pregunta3() {
@@ -647,8 +637,6 @@ function pregunta3() {
 document.getElementById("cardBtn3").addEventListener("click", () => {
     document.getElementById("container").classList.toggle("change")
 })
-
-
 
 // RESPUESTA INCORRECTA (A)
 document.getElementById("opcionA3").addEventListener('click', () => {
@@ -695,7 +683,6 @@ document.getElementById("opcionB3").addEventListener('click', () => {
 
 })
 
-
 // RESPUESAT CORRECTA (C)
 
 document.getElementById("opcionC3").addEventListener('click', () => {
@@ -721,7 +708,6 @@ document.getElementById("opcionC3").addEventListener('click', () => {
 
 })
 
-
 // PREGUNTA 4
 
 function pregunta4() {
@@ -733,8 +719,6 @@ function pregunta4() {
 document.getElementById("cardBtn4").addEventListener("click", () => {
     document.getElementById("container").classList.toggle("change")
 })
-
-
 
 // RESPUESTA INCORRECTA (A)
 document.getElementById("opcionA4").addEventListener('click', () => {
@@ -783,7 +767,6 @@ document.getElementById("opcionB4").addEventListener('click', () => {
 
 })
 
-
 // RESPUESAT INCORRECTA (C)
 
 document.getElementById("opcionC4").addEventListener('click', () => {
@@ -807,20 +790,17 @@ document.getElementById("opcionC4").addEventListener('click', () => {
 
 })
 
-
 // PREGUNTA 5
 
 function pregunta5() {
     document.getElementById("card5").classList.toggle("card2Invisible")
 }
 
-
 //FUNCIONALIDAD DE MOSTRAR OPCIONES
 
 document.getElementById("cardBtn5").addEventListener("click", () => {
     document.getElementById("container").classList.toggle("change")
 })
-
 
 // RESPUESTA CORRECTA (A)
 document.getElementById("opcionA5").addEventListener('click', () => {
@@ -870,7 +850,6 @@ document.getElementById("opcionB5").addEventListener('click', () => {
 
 })
 
-
 // RESPUESAT INCORRECTA (C)
 
 document.getElementById("opcionC5").addEventListener('click', () => {
@@ -894,22 +873,17 @@ document.getElementById("opcionC5").addEventListener('click', () => {
 
 })
 
-
-
-
 // PREGUNTA 6
 
 function pregunta6() {
     document.getElementById("card6").classList.toggle("card2Invisible")
 }
 
-
 //FUNCIONALIDAD DE MOSTRAR OPCIONES
 
 document.getElementById("cardBtn6").addEventListener("click", () => {
     document.getElementById("container").classList.toggle("change")
 })
-
 
 // RESPUESTA INCORRECTA (A)
 document.getElementById("opcionA6").addEventListener('click', () => {
@@ -956,7 +930,6 @@ document.getElementById("opcionB6").addEventListener('click', () => {
 
 })
 
-
 // RESPUESAT CORRECTA (C)
 
 document.getElementById("opcionC6").addEventListener('click', () => {
@@ -982,22 +955,17 @@ document.getElementById("opcionC6").addEventListener('click', () => {
 
 })
 
-
-
-
 // PREGUNTA 7
 
 function pregunta7() {
     document.getElementById("card7").classList.toggle("card2Invisible")
 }
 
-
 //FUNCIONALIDAD DE MOSTRAR OPCIONES
 
 document.getElementById("cardBtn7").addEventListener("click", () => {
     document.getElementById("container").classList.toggle("change")
 })
-
 
 // RESPUESTA INCORRECTA (A)
 document.getElementById("opcionA7").addEventListener('click', () => {
@@ -1044,7 +1012,6 @@ document.getElementById("opcionB7").addEventListener('click', () => {
 
 })
 
-
 // RESPUESAT CORRECTA (C)
 
 document.getElementById("opcionC7").addEventListener('click', () => {
@@ -1070,20 +1037,17 @@ document.getElementById("opcionC7").addEventListener('click', () => {
 
 })
 
-
 // PREGUNTA 8
 
 function pregunta8() {
     document.getElementById("card8").classList.toggle("card2Invisible")
 }
 
-
 //FUNCIONALIDAD DE MOSTRAR OPCIONES
 
 document.getElementById("cardBtn8").addEventListener("click", () => {
     document.getElementById("container").classList.toggle("change")
 })
-
 
 // RESPUESTA INCORRECTA (A)
 document.getElementById("opcionA8").addEventListener('click', () => {
@@ -1132,7 +1096,6 @@ document.getElementById("opcionB8").addEventListener('click', () => {
 
 })
 
-
 // RESPUESAT INCORRECTA (C)
 
 document.getElementById("opcionC8").addEventListener('click', () => {
@@ -1156,20 +1119,17 @@ document.getElementById("opcionC8").addEventListener('click', () => {
 
 })
 
-
 // PREGUNTA 9
 
 function pregunta9() {
     document.getElementById("card9").classList.toggle("card2Invisible")
 }
 
-
 //FUNCIONALIDAD DE MOSTRAR OPCIONES
 
 document.getElementById("cardBtn9").addEventListener("click", () => {
     document.getElementById("container").classList.toggle("change")
 })
-
 
 // RESPUESTA INCORRECTA (A)
 document.getElementById("opcionA9").addEventListener('click', () => {
@@ -1216,7 +1176,6 @@ document.getElementById("opcionB9").addEventListener('click', () => {
 
 })
 
-
 // RESPUESAT CORRECTA (C)
 
 document.getElementById("opcionC9").addEventListener('click', () => {
@@ -1242,20 +1201,17 @@ document.getElementById("opcionC9").addEventListener('click', () => {
 
 })
 
-
 // PREGUNTA 10
 
 function pregunta10() {
     document.getElementById("card10").classList.toggle("card2Invisible")
 }
 
-
 //FUNCIONALIDAD DE MOSTRAR OPCIONES
 
 document.getElementById("cardBtn10").addEventListener("click", () => {
     document.getElementById("container").classList.toggle("change")
 })
-
 
 // RESPUESTA INCORRECTA (A)
 document.getElementById("opcionA10").addEventListener('click', () => {
@@ -1310,7 +1266,6 @@ document.getElementById("opcionB10").addEventListener('click', () => {
 
 })
 
-
 // RESPUESAT CORRECTA (C)
 
 document.getElementById("opcionC10").addEventListener('click', () => {
@@ -1343,4 +1298,3 @@ document.getElementById("opcionC10").addEventListener('click', () => {
     }, 4500);
 
 })
-

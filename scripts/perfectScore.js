@@ -1,6 +1,5 @@
 var gravedad = .5;
 var numHijos = 50;
-
 var numParticulas = 100;
 var particulasCreadas = 0;
 
@@ -95,13 +94,11 @@ function explotar(particula) {
     particula.remove();
 }
 
-
 window.onload = function() {
 	start();
 
 	update();
 };
-
 
 function getRandomColor() {
   var letters = '0123456789ABCDEF';

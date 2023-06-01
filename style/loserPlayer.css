@@ -29,7 +29,6 @@ body {
     font-size: 2em;
 }
 
-
 .contLoserP .ContImgsLoser {
     width: 50%;
     height: 100%;
@@ -57,7 +56,6 @@ body {
     align-items: center;
 }
 
-
 .contButtonBack {
     width: 100%;
     height: auto;
@@ -69,7 +67,6 @@ body {
 .anclaButton {
     text-decoration: none;
 }
-
 
 .buttons_global_StyleTatto {
     color: black;
@@ -90,7 +87,6 @@ body {
     visibility: visible;
     transition: 1s;
   }
-
 
 .buttons_global_StyleTatto:hover {
   color: white;
@@ -114,14 +110,12 @@ body {
       transform: skewX(-45deg) scale(1, 1);
 }
 
-
 .btnHidden {
     width: 0;
     height: 0;
     visibility: hidden;
     transition: 1s;
 }
-
 
 .lentDark {
     background-color: #303030;
@@ -136,7 +130,6 @@ body {
     transition: 1s;
     background: transparent;
 }
-
 
 .contLoserP .vapur {
     width: 100%;

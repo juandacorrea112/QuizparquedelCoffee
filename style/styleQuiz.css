@@ -253,11 +253,7 @@ html {
   margin-right: 15px;
 }
 
-
-/* formulario de confirmacion de actualizacion de datos */
-
 .formAddhidden {
-  /* visibility: hidden; */
   display: none;
   z-index: 0;
 }
@@ -266,8 +262,6 @@ html {
   border-radius: 10px;
   position: absolute;
   transform: translate(440px, 150px);
-  /* top: 25%;
-  left: 30%; */
   z-index: 100;
   width: 48rem;
   height: 30rem;
