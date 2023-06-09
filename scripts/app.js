@@ -1,6 +1,33 @@
+
+
 /*===========TIEMPO DE INNACTIVIDAD DEL USUARIO======*/
 const timeInnactivity = 10 * 6 * 1000
 let timeoutId;
+
+
+function getCookie(nombre) {
+    var cookieName = nombre + "=";
+    var cookies = document.cookie.split(";");
+  
+    for (var i = 0; i < cookies.length; i++) {
+      var cookie = cookies[i].trim();
+  
+      if (cookie.indexOf(cookieName) === 0) {
+        return decodeURIComponent(cookie.substring(cookieName.length, cookie.length));
+      }
+    }
+  
+    return null;
+  }
+
+// window.onload = function() {
+//     console.log('sirva');
+//     let PuntosAc = getCookie("Puntos")
+    
+//     if (PuntosAc) {
+//         numberPuntos.innerHTML = PuntosAc
+//     }
+// }
 
 // Función para reiniciar el temporizador de inactividad
 function resetTimer() {
@@ -106,6 +133,9 @@ let respuestaA10 = document.getElementById('respuestaA10')
 let respuestaB10 = document.getElementById('respuestaB10')
 let respuestaC10 = document.getElementById('respuestaC10')
 /*-------------------------------------------------*/
+
+
+
 document.addEventListener('keyup', function (event) {
     // Verifica si la tecla presionada es "Enter" (código 13)
     if (event.keyCode === 13) {
@@ -246,20 +276,7 @@ confirmModal.addEventListener('click', () => {
 })
 
 // Función para leer el valor de una cookie por su nombre
-function getCookie(nombre) {
-    var cookieName = nombre + "=";
-    var cookies = document.cookie.split(";");
-  
-    for (var i = 0; i < cookies.length; i++) {
-      var cookie = cookies[i].trim();
-  
-      if (cookie.indexOf(cookieName) === 0) {
-        return decodeURIComponent(cookie.substring(cookieName.length, cookie.length));
-      }
-    }
-  
-    return null;
-  }
+
 
   // Cuando la página se carga, verifica si hay una cookie para el contenido del h1 y actualiza su valor si es necesario
   window.onload = function() {
@@ -466,6 +483,8 @@ function getCookie(nombre) {
     }
 
   }
+
+
 
 //FUNCIONALIDAD DE MOSTRAR LAS OPCIONES
 document.getElementById("cardBtn").addEventListener("click", () => {
@@ -1271,6 +1290,10 @@ document.getElementById("opcionB10").addEventListener('click', () => {
 document.getElementById("opcionC10").addEventListener('click', () => {
     puntos++
     number.textContent = puntos
+    localStorage.setItem("miClave", puntos);
+
+    
+    console.log(puntos);
     document.getElementById("opcionC10").style.background = "rgb(0, 255, 0)"
     setTimeout(() => {
         document.getElementById("container").classList.toggle("change")
@@ -1298,3 +1321,7 @@ document.getElementById("opcionC10").addEventListener('click', () => {
     }, 4500);
 
 })
+
+
+
+

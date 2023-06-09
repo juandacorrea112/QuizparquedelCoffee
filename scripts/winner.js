@@ -1,3 +1,4 @@
+let numberPuntos = document.getElementById('number2')
 window.addEventListener('load', () => {
     setTimeout(() => {
         document.getElementById('lentDarkWinner').classList.toggle('lentDarkWinner')
@@ -16,3 +17,12 @@ window.addEventListener('load', () => {
         window.location.assign('/pages/index.html')
     }, 20000);
 })
+
+
+
+window.onload = function() {
+        var valorAlmacenado = localStorage.getItem("miClave");
+        const puntajeFinal = 'Su puntaje final es de:'
+        numberPuntos.textContent = `${puntajeFinal} ${ valorAlmacenado} puntos`
+}
+
