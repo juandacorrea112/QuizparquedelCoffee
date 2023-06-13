@@ -22,7 +22,24 @@ window.addEventListener('load', () => {
 
 window.onload = function() {
         var valorAlmacenado = localStorage.getItem("miClave");
-        const puntajeFinal = 'Su puntaje final es de:'
-        numberPuntos.textContent = `${puntajeFinal} ${ valorAlmacenado} puntos`
+
+        const puntajeFinal = 'Su puntaje final es de: '
+        numberPuntos.innerHTML =  '<span style="color: white;">' + puntajeFinal + '</span> ' + '<span style="color: lime;">' + valorAlmacenado + '</span> puntos'
+
+        ScrollReveal().reveal("h1", {
+            delay: 2000,
+            duration: 2000,
+            distance: "400%",
+            origin: "top",
+            opacity: null,
+          });
+      
+          ScrollReveal().reveal("p", {
+            delay: 3000,
+            duration: 2500,
+            distance: "11100%",
+            origin: "top",
+            opacity: null,
+          });
 }
 
